@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add advert</title>
+    <link rel="stylesheet" href="css/global.min.css">
+    <link rel="stylesheet" href="css/start-add-advenrtisement.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__left-side">
+                <a href="#" class="logo header__logo">
+                    <img src="img/header/logo.png" alt="" class="logo__img">
+                </a>
+                <nav class="menu header__menu header__menu--price">
+                    <ul>
+                        <li><a href="#">Мои объявления</a></li>
+                        <li><a href="#">Добавить прайс</a></li>
+                        <li><a href="#">Стоимость услуг</a></li>
+                        
+                    </ul>
+                </nav>                
+            </div>
+            <button class="header__burger burger" id="burger">
+                <span class="rect"></span>
+                <span class="rect"></span>
+                <span class="rect"></span>
+            </button>
+            <div class="header__right-side">
+                <a href="#" class="wallet">
+                    <span class="icon-wallet"></span><span class="wallet__text">6540 р.</span>
+                </a>
+                <a href="#" class="settings">
+                    <span class="icon-cog"></span><span class="settings__text">Настройки</span>
+                </a>
+            </div>
+            
+        </header>
+        <main class="main">
+            <form class="advertisement">
+                <div class="container">
+                    <div class="page-title">Добавить объявление</div>
+                    <div class="advertisement__inner">
+                        <div class="advertisement__block">
+                            <div class="advertisement__container">
+                                <div class="advertisement__item">
+                                    <div class="advertisement__item-title">Город объявления</div>
+                                    <div class="advertisement__item-block advertisement__item-block--max-width advertisement__item-block--w100-md">
+                                        <select name="" id="" class="advertisement__select custom-select">
+                                            <option value="1" class="advertisement__option">Выбрать город</option>
+                                            <option value="1" class="advertisement__option">Выбрать город</option>
+                                            <option value="1" class="advertisement__option">Выбрать город</option>
+                                        </select>
+                                        <div class="advertisement__item-block">
+                                            <input type="text" class="advertisement__input advertisement__input--number advertisement__input--mt advertisement__input--ml" placeholder="Номер телефона">
+                                            <button class="advertisement__add-number ">добавить номер</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advertisement__item">
+                                    <div class="advertisement__item-title">Выбрать марку и модель авто</div>
+                                    <div class="advertisement__item-block advertisement__item-block--md">
+                                        <div class="advertisement__item-container">
+                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-right advertisement__select--border-bottom">
+                                                <option value="1" class="advertisement__option">Марка</option>
+                                                <option value="1" class="advertisement__option">Марка</option>
+                                                <option value="1" class="advertisement__option">Марка</option>
+                                            </select>
+                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-bottom">
+                                                <option value="1" class="advertisement__option">Модель</option>
+                                                <option value="1" class="advertisement__option">Модель</option>
+                                                <option value="1" class="advertisement__option">Модель</option>
+                                            </select>
+                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--year advertisement__select--w50 advertisement__select--border-right advertisement__select--border-left advertisement__select--border-right-md">
+                                                <option value="1" class="advertisement__option">2003</option>
+                                                <option value="1" class="advertisement__option">2003</option>
+                                                <option value="1" class="advertisement__option">2003</option>
+                                            </select>
+                                            <input type="text" class="advertisement__input advertisement__input--ml advertisement__input--w50" placeholder="Модификация">
+                                        </div>
+                                        <div class="advertisement__item-container">
+                                            <input type="text" class="advertisement__input advertisement__input--w50 advertisement__input--border-right advertisement__input--border-bottom" placeholder="Объем">
+                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-bottom">
+                                                <option value="1" class="advertisement__option">Бензин</option>
+                                                <option value="1" class="advertisement__option">Бензин</option>
+                                                <option value="1" class="advertisement__option">Бензин</option>
+                                            </select>
+                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-right advertisement__select--border-left">
+                                                <option value="1" class="advertisement__option">Коробка</option>
+                                                <option value="1" class="advertisement__option">Коробка</option>
+                                                <option value="1" class="advertisement__option">Коробка</option>
+                                            </select>
+                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 ">
+                                                <option value="1" class="advertisement__option">Кузов</option>
+                                                <option value="1" class="advertisement__option">Кузов</option>
+                                                <option value="1" class="advertisement__option">Кузов</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="advertisement__item">
+                                    <div class="advertisement__item-title">Название запчасти</div>
+                                    <div class="advertisement__item-container">
+                                        <div class="advertisement__item-block">
+                                            <select name="" id="" class="custom-select advertisement__select">
+                                                <option value="1" class="advertisement__option">Название запчасти</option>
+                                                <option value="1" class="advertisement__option">Название запчасти</option>
+                                                <option value="1" class="advertisement__option">Название запчасти</option>
+                                            </select>
+                                        </div>
+                                        <div class="advertisement__item-block">
+                                            <input type="text" class="advertisement__input advertisement__input--mt advertisement__input--ml" placeholder="Артикул запчасти">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advertisement__item">
+                                    <div class="advertisement__item-title">Цена</div>
+                                    <div class="advertisement__item-container">
+                                        <div class="advertisement__item-block">
+                                            <input type="text" class="advertisement__input advertisement__input--mb" placeholder="Введите цену">
+                                        </div>
+                                        <div class="advertisement__item-block">
+                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--ml">
+                                                <option value="1" class="advertisement__option">Белорусский рубль</option>
+                                                <option value="1" class="advertisement__option">Белорусский рубль</option>
+                                                <option value="1" class="advertisement__option">Белорусский рубль</option>
+                                            </select>
+                                        </div>
+                                        <div class="advertisement__price-right">
+                                            35 <span class="advertisement__other-price">$ </span><span class="advertisement__other-price--other-ff"> или</span> 8280<span class="advertisement__other-price rubl"> e</span>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="advertisement__item">
+                                    <div class="advertisement__item-title">Описание</div>
+                                    <div class="advertisement__item-container">
+                                        <textarea name="" id="" cols="30" rows="5" class="advertisement__textarea" placeholder="Чем подробнее описание, тем меньше «пустых» звонков и больше реальных продаж"></textarea> 
+                                    </div>
+                                </div>
+                                <div class="advertisement__item-block advertisement__item-block--ml">
+                                    <div class="advertisement__item-title advertisement__item-title--md"></div>
+                                    <input type="file" id="file" class="advertisement__input-file">
+                                    <label for="file" class="advertisement__add-button">Добавить фото или видео</label>
+                                    <div class="advertisement__explanation">На объявления с фото, а особенно с видео <br> кликают в 2-3 раза чаще</div>
+                                </div>
+                                <div class="advertisement__item-block">
+                                    <div class="advertisement__item-title advertisement__item-title--md"></div>
+                                    <div class="advertisement__img-container">
+                                        <a href="#" class="advertisement__img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="advertisement__img">
+                                        </a>
+                                        <a href="#" class="advertisement__img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="advertisement__img">
+                                        </a>
+                                        <a href="#" class="advertisement__img-block advertisement__img-block--video">
+                                            <span class="advertisement__img-block-video">Видео</span>                               
+                                            <img src="img/product/side-img-1.jpg" alt="" class="advertisement__img">
+                                        </a>
+                                        <a href="#" class="advertisement__img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="advertisement__img">
+                                        </a>
+                                        <a href="#" class="advertisement__img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="advertisement__img">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <button class="advertisement__more-setting" id="advertisement__more-setting">
+                                <span class="advertisement__more-setting-text">больше параметров</span>
+                            </button>
+                            <div class="advertisement__hidden-settings" id="advertisement__hidden-settings">
+                                <div class="advertisement__item advertisement__item--p">
+                                    <div class="advertisement__item-title">Наличие на складе</div>
+                                    <div class="advertisement__item-container">
+                                        <select name="" id="" class="custom-select advertisement__select">
+                                            <option value="1" class="advertisement__option">В наличии</option>
+                                            <option value="1" class="advertisement__option">В наличии</option>
+                                            <option value="1" class="advertisement__option">В наличии</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="advertisement__item advertisement__item--p">
+                                    <div class="advertisement__item-title">Состояние</div>
+                                    <div class="advertisement__item-container">
+                                        <select name="" id="" class="custom-select advertisement__select">
+                                            <option value="1" class="advertisement__option">Б/у</option>
+                                            <option value="1" class="advertisement__option">Б/у</option>
+                                            <option value="1" class="advertisement__option">Б/у</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="advertisement__item advertisement__item--p">
+                                    <div class="advertisement__item-title">Купон на скидку</div>
+                                    <div class="advertisement__item-container">
+                                        <input type="text" class="advertisement__input advertisement__input--mt" placeholder="Введите код купона">
+                                        <br>
+                                        <input type="text" class="advertisement__input advertisement__input--mt advertisement__input--sale" placeholder="Скидка">
+                                        <select name="" id="" class="custom-select advertisement__select advertisement__select--mt advertisement__select--w50">
+                                            <option value="1" class="advertisement__option">Процент</option>
+                                            <option value="1" class="advertisement__option">Процент</option>
+                                            <option value="1" class="advertisement__option">Процент</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-side advertisement__product-side">
+                            <div class="advertisement__how-seen">Как выглядит объявление</div>
+                            <a href="#" class="product-side__title">
+                                Двигатель к Audi A3, 2012 г.
+                            </a>
+                            <div class="product-side__container">
+                                <a href="#" class="product-side__img-block">
+                                    <img src="img/product/main-img-1.jpg" alt="" class="product-side__img">
+                                </a>
+                                <div class="product-side__desc-container">
+                                    
+                                    <div class="product-side__desc">
+                                        <a class="product-side__desc-link" href="#">Двигатели </a>›<a class="product-side__desc-link" href="#"> Audi </a>›<a class="product-side__desc-link" href="#"> A3 </a>›<a class="product-side__desc-link" href="#"> 2003-2007 </a>›<a class="product-side__desc-link" href="#"> 1.6 л, дизель, МКПП, хэтчбек</a>
+                             
+                                    </div>
+                                    
+                                    <div class="product-side__block">
+                                        
+                                        <div class="product-item__price">
+                                            <div class="product-item__price-left product-side__price">
+                                                <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble rubl">e</span></div>                                    
+                                                <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="product-item__tegs">
+                                <a href="#" class="product-item__tegs-item">Минск</a>
+                                <a href="#" class="product-item__tegs-item">Belmotors.by</a>
+                                <span class="product-item__assessment">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="#" class="product-item__assessment-text">(12)</a>
+                                </span>
+                                <br>
+                            </div>
+                            <div class="product-side__state">Состояние: б/у из Европы, мкпп 5 ст., небольшой люфт турбины, трещина горячей части турбины , цена указана без навесного, Модель двигателя...</div>
+                        </div>
+                        <div class="container">
+                            <button class="advertisement__add-advert">Добавить объявление</button>
+                            <div class="advertisement__rules-container">
+                                <input class="advertisement__rules-input" type="checkbox" id="advertisement-check" required>
+                                <label for="advertisement-check" class="advertisement__rules-label"><span class="icon-check"></span>я согласен с <a href="#" class="advertisement__rules-links">правилами сайта <br></a> и политикой <a href="#" class="advertisement__rules-links">конфиденциальности</a></label>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </form>
+        </main>
+        <script src="js/add-advenrtisement.js"></script>
+        <link rel="stylesheet" href="css/add-advenrtisement.min.css">
+    </div>
+</body>
+</html>

@@ -6,11 +6,11 @@
     <title>Product</title>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/global.min.css">
-    <link rel="stylesheet" href="img/sprite.svg">
     <link rel="stylesheet" href="css/start-product.min.css">
+    
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <header class="header">
             <div class="header__left-side">
                 <a href="#" class="logo header__logo">
@@ -19,10 +19,28 @@
                 <nav class="menu header__menu">
                     <ul>
                         <li><a href="#">Двигатели</a></li>
-                        <li><a href="#">КПП</a></li>
+                        <li><a href="#">КПП</a>
+                            <ul>
+                                <li><a href="#">МКПП</a></li>
+                                <li><a href="#">АКПП</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Стартеры</a></li>
                         <li><a href="#">Генераторы</a></li>
-                        <li><a href="#">Датчики</a></li>
+                        <li><a href="#">Датчики</a>
+                            <ul>
+                                <li><a href="#">Датчики холостого хода</a></li>
+                                <li><a href="#" class="menu__item--flex">Датчики двигателя <span class="icon-arrow-down"></span></a>
+                                    <ul>
+                                        <li><a href="#">Датчики заслонки</a></li>
+                                        <li><a href="#">Датчики цилиндров</a></li>
+                                        <li><a href="#">Большие и очень интересные датчики в ассортименте хорошего качества</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Специальные датчики слежения GPS за автомобилем</a></li>
+                                
+                            </ul>
+                        </li>
                         <li><a href="#">Рулевые рейки</a></li>
                         <li><a href="#">Радиаторы</a></li>
                         <li><a href="#">Фары</a></li>
@@ -32,22 +50,27 @@
                         <li><a href="#">Генераторы</a></li>
                     </ul>
                 </nav>
-                <nav class="menu-adaptive header__menu-adaptive" id="menu-adaptive">
+                <div class="menu-adaptive header__menu-adaptive" id="menu-adaptive">
                     <ul>
-                        <li><a href="#">Двигатели</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li id="menu-adaptive__item--submenu"><a href="#" >Двигатели<span class="icon-arrow-down"></span></a>
+                            <ul id="menu-adaptive__item--submenu-item">
+                                <li><a href="#">Двигатели</a></li>
+                                <li><a href="#">Двигатели</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">КПП</a></li>
+                        <li><a href="#">Форсунки</a></li>
+                        <li><a href="#">Генераторы</a></li>
                         <li><a href="#">Стартеры</a></li>
-                        <li><a href="#">Генераторы</a></li>
-                        <li><a href="#">Датчики</a></li>
-                        <li><a href="#">Рулевые рейки</a></li>
-                        <li><a href="#">Радиаторы</a></li>
-                        <li><a href="#">Фары</a></li>
-                        <li><a href="#">Фонари</a></li>
-                        <li><a href="#">ЭБУ</a></li>
-                        <li><a href="#">Капоты</a></li>
-                        <li><a href="#">Генераторы</a></li>
+                        <li><a href="#">Турбины</a></li>
+                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-bell"></span>Уведомления</a></li>
+                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-heart"></span>В закладках <sup>5</sup></a></li>
+                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-list"></span>Мои объявления</a></li>
+                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-cog"></span>Личный кабинет</a></li>
                     </ul>
-                </nav>
+                    <button class="menu-adaptive__search"><span class="icon-search"></span>Поиск в 1 клик</button>
+                </div>
                 <button class="header__burger burger" id="burger">
                     <span class="rect"></span>
                     <span class="rect"></span>
@@ -55,10 +78,14 @@
                 </button>
             </div>
             <div class="header__right-side">
-                <button class="town header__town">
-                    <svg class="icon icon-location-arrow"><use xlink:href="img/sprite.svg#icon-location-arrow"></use></svg>
-                    <span>Минск</span>
-                </button>
+                
+                
+                <div class="town header__town">
+                    <span class="icon-location-arrow"></span>
+                    <select name="" id="" class="custom-select town__select">
+                        <option value="1" class="town_option">Минск</option>
+                    </select>
+                </div>
                 <a href="#" class="post-an-ad header__post-an-ad">
                     <span class="post-an-ad__plus">+</span>
                     <span class="post-an-ad__text">Подать объявление</span>
@@ -69,156 +96,172 @@
         <main class="main">
             <div class="container">
                 <ul>
-                    <li><a href="product.html" target="_blank">
-                        Карточка
-                    </a></li>
-                    <li><a href="category.html">
-                        Категории
-                    </a></li>
+                    <li><a style="font-size: 40px;line-break: 43px;" href="product.html" target="_blank" class="link">Продукт</a></li>
+                    <li><a style="font-size: 40px;line-break: 43px;" href="add-price.html" target="_blank" class="link">Добавить прайс</a></li>
+                    <li><a style="font-size: 40px;line-break: 43px;" href="category.html" target="_blank" class="link">Категории</a></li>
+                    <li><a style="font-size: 40px;line-break: 43px;" href="options.html" target="_blank" class="link">Настройки</a></li>
+                    <li><a style="font-size: 40px;line-break: 43px;" href="add-advertisement.html" target="_blank" class="link">Добавить объявление</a></li>
                 </ul>
             </div>
         </main>
         <footer class="footer">
-            <div class="footer__upper-block">
-                <div class="footer__menu-container">
-                    <div class="footer__menu">
-                        <div class="footer__menu-title">
-                            Каталог запчастей 
+            <div class="footer__container">
+                <div class="footer__upper-block">
+                
+                    <div class="footer__menu-container">
+                        <div class="footer__menu">
+                            <div class="footer__menu-title">
+                                Каталог запчастей 
+                            </div>
+                            <ul class="footer__menu-list footer__menu-list--column-2">
+                                <li><a href="#">Двигатели</a></li>
+                                <li><a href="#">КПП</a></li>
+                                <li><a href="#">Стартеры</a></li>
+                                <li><a href="#">Генераторы</a></li>
+                                <li><a href="#">Датчики</a></li>
+                                <li><a href="#">Рулевые рейки</a></li>
+                                <li><a href="#">Блоки управления</a></li>
+                                <li><a href="#">Лямбда зонды</a></li>
+                                <li><a href="#">Радиаторы</a></li>
+                                <li><a href="#">Кузовные запчасти</a></li>
+                                <li><a href="#">Форсунки</a></li>
+                                <li><a href="#">Фары</a></li>
+                                <li><a href="#">Фонари</a></li>
+                                <li><a href="#">Блоки цилиндров</a></li>
+                            </ul>
                         </div>
-                        <ul class="footer__menu-list footer__menu-list--column-2">
-                            <li><a href="#">Двигатели</a></li>
-                            <li><a href="#">КПП</a></li>
-                            <li><a href="#">Стартеры</a></li>
-                            <li><a href="#">Генераторы</a></li>
-                            <li><a href="#">Датчики</a></li>
-                            <li><a href="#">Рулевые рейки</a></li>
-                            <li><a href="#">Блоки управления</a></li>
-                            <li><a href="#">Лямбда зонды</a></li>
-                            <li><a href="#">Радиаторы</a></li>
-                            <li><a href="#">Кузовные запчасти</a></li>
-                            <li><a href="#">Форсунки</a></li>
-                            <li><a href="#">Фары</a></li>
-                            <li><a href="#">Фонари</a></li>
-                            <li><a href="#">Блоки цилиндров</a></li>
-                        </ul>
+                        <div class="footer__menu footer__menu--info footer__menu--w48">
+                            <div class="footer__menu-title">
+                                Информация  
+                            </div>
+                            <ul class="footer__menu-list ">
+                                <li><a href="#">О проекте</a></li>
+                                <li><a href="#">Новости и статьи</a></li>
+                                <li><a href="#">Условия возврата</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Реклама на сайте</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu footer__menu--seller footer__menu--w48">
+                            <div class="footer__menu-title">
+                                Для продавцов  
+                            </div>
+                            <ul class="footer__menu-list ">
+                                <li><a href="#">Разместить прайс</a></li>
+                                <li><a href="#">Условия сотрудничества</a></li>
+                                <li><a href="#">Рейтинг продавцов</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer__menu footer__menu--info footer__menu--w48">
-                        <div class="footer__menu-title">
-                            Информация  
-                        </div>
-                        <ul class="footer__menu-list ">
-                            <li><a href="#">О проекте</a></li>
-                            <li><a href="#">Новости и статьи</a></li>
-                            <li><a href="#">Условия возврата</a></li>
-                            <li><a href="#">Пользовательское соглашение</a></li>
-                            <li><a href="#">Политика конфиденциальности</a></li>
-                            <li><a href="#">Реклама на сайте</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__menu footer__menu--w48">
-                        <div class="footer__menu-title">
-                            Для продавцов  
-                        </div>
-                        <ul class="footer__menu-list ">
-                            <li><a href="#">Разместить прайс</a></li>
-                            <li><a href="#">Условия сотрудничества</a></li>
-                            <li><a href="#">Рейтинг продавцов</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                    <div class="footer__menu-container footer__menu-container--links footer__menu-container--justify-center">
+                       <a href="#" class="footer__menu-link-post">
+                            Подать объявление
+                       </a>
+                       <div class="footer__menu-text-links">
+                        <a href="#" class="footer__menu-link-site">
+                            Belmotors.by
+                       </a>
+                       <a href="#" class="footer__menu-link-lk">
+                            Личный кабинет 
+                       </a>
+                       </div>
                     </div>
                 </div>
-                <div class="footer__menu-container footer__menu-container--links footer__menu-container--justify-center">
-                   <a href="#" class="footer__menu-link-post">
-                        Подать объявление
-                   </a>
-                   <div class="footer__menu-text-links">
-                    <a href="#" class="footer__menu-link-site">
-                        Belmotors.by
-                   </a>
-                   <a href="#" class="footer__menu-link-lk">
-                        Личный кабинет 
-                   </a>
-                   </div>
+                <div class="footer__medium">
+                    <div class="footer__medium-block">
+                        <p class="footer__medium-text">
+                            Администрация сайта не несет ответственности за информацию, указанную в объявлении. Обязательно уточняйте у продавца подробную информацию о товаре (наличие, цена, комплектация, состояние и т.д.) <br>
+                        </p>
+                        <p class="footer__medium-text">
+                            Мы полагаем, что пользуясь данным веб-сайтом, вы даёте своё согласие с <a href="#">политикой безопасности</a> для данного сайта.
+                        </p>
+                    </div>
+                    <div class="footer__medium-block footer__medium-block--number">
+                        <div class="footer__number-container">
+                            <div class="footer__number-container-text">
+                                Звоните по вопросам <br> сотрудничества <br> и рекламы
+                            </div>
+                            <div class="footer__number-container-right">
+                                <a href="tel:+375293776622" class="footer__number"><sup>+375 (29)</sup> 377-66-22</a>
+                                <a href="tel:+375333776622" class="footer__number footer__number--xl"><sup>+375 (33)</sup> 377-66-22</a>
+                                <a href="mailto:info@onbu.ru" class="footer__mail">info@onbu.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer__social-container">
+                            <div class="footer__social-block">
+                                <a href="#" class="footer__social-link footer__social-link--vk">
+                                    <span class="icon-vk"></span>
+                                </a>
+                                <a href="#" class="footer__social-link footer__social-link--google">
+                                    <span class="icon-google"></span>
+                                </a>
+                                <a href="#" class="footer__social-link footer__social-link--inst">
+                                    <span class="icon-instagram"></span>
+                                </a>
+                                <a href="#" class="footer__social-link footer__social-link--odnoklassniki">
+                                    <span class="icon-odnoklassniki"></span>
+                                </a>
+                            </div>
+                            <a href="#" class="footer__social-logo">
+                                <span class="footer__social-logo-text">On</span>
+                                <span class="footer__social-logo-text">Bu</span>
+                                <span class="footer__social-logo-text footer__social-logo-text--mini">запчасти бу</span>
+                            </a>
+                        </div>
+                    </div>                    
+                    <div class="assessment footer__assessment">
+                        <div class="assessment__container">
+                            <div class="assessment__title">
+                                Оцените сайт
+                            </div>
+                            <div id="rater"></div>
+                        </div>
+                        <div class="assessment__total">
+                            <span class="assessment__total-item">Рейтинг: <span class="assessment__total-item--black">4.42</span></span>
+                            <span class="assessment__total-item assessment__total-quantity">Оценок: <span class="assessment__total-item--black">526</span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer__medium">
-                <div class="footer__medium-block">
-                    <p class="footer__medium-text">
-                        Администрация сайта не несет ответственности за информацию, указанную в объявлении. Обязательно уточняйте у продавца подробную информацию о товаре (наличие, цена, комплектация, состояние и т.д.) <br>
-                    </p>
-                    <p class="footer__medium-text">
-                        Мы полагаем, что пользуясь данным веб-сайтом, вы даёте своё согласие с <a href="#">политикой безопасности</a> для данного сайта.
-                    </p>
-                </div>
-                <div class="footer__medium-block footer__medium-block--number">
-                    <div class="footer__number-container">
-                        <div class="footer__number-container-text">
-                            Звоните по вопросам сотрудничества <br> и рекламы
-                        </div>
-                        <div class="footer__number-container-right">
-                            <a href="tel:+375293776622" class="footer__number"><sup>+375 (29)</sup> 377-66-22</a>
-                            <a href="mailto:info@onbu.ru" class="footer__mail">info@onbu.ru</a>
-                        </div>
-                    </div>
-                    <div class="footer__social-container">
-                        <div class="footer__social-block">
-                            <a href="#" class="footer__social-link footer__social-link--vk">
-                                <img src="img/social/vk.png" alt="">
-                            </a>
-                            <a href="#" class="footer__social-link footer__social-link--google">
-                                <img src="img/social/google.png" alt="">
-                            </a>
-                            <a href="#" class="footer__social-link footer__social-link--inst" style="background-image: url(img/social/inst-bg.jpg);">
-                                <img src="img/social/inst.png" alt="">
-                            </a>
-                            <a href="#" class="footer__social-link footer__social-link--odnoklassniki">
-                                <img src="img/social/odnoklassniki.png" alt="">
-                            </a>
-                        </div>
-                        <a href="#" class="footer__social-logo">
-                            <span class="footer__social-logo-text">On</span>
-                            <span class="footer__social-logo-text">Bu</span>
-                            <span class="footer__social-logo-text footer__social-logo-text--mini">запчасти бу</span>
+            
+            
+            <div class="footer__bottom-block">
+                <div class="footer__container footer__container--flex">
+                    <div class="footer__payment">
+                        <a href="#" class="footer__payment-item">
+                            <img src="img/payment/mastercard.png" alt="" class="footer__payment-img">
+                        </a>
+                        <a href="#" class="footer__payment-item">
+                            <img src="img/payment/mastercard-sc.png" alt="" class="footer__payment-img">
+                        </a>
+                        <a href="#" class="footer__payment-item">
+                            <img src="img/payment/visa.png" alt="" class="footer__payment-img">
+                        </a>
+                        <a href="#" class="footer__payment-item">
+                            <img src="img/payment/verified-by-visa.png" alt="" class="footer__payment-img">
                         </a>
                     </div>
-                </div>                    
-                <div class="assessment footer__assessment">
-                    <div class="assessment__container">
-                        <div class="assessment__title">
-                            Оцените сайт
-                        </div>
-                        <div class="assessment__stars">
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="assessment__total">
-                        <span class="assessment__total-item">Рейтинг: <span class="assessment__total-item--black">4.42</span></span>
-                        <span class="assessment__total-item assessment__total-quantity">Оценок: <span class="assessment__total-item--black">526</span></span>
+                    <span class="footer__bottom-text">
+                        © 2020 Все права защищены
+                    </span>
+                    <div class="footer__counter">
+                        <a href="#" class="footer__counter-item">
+                            <img src="img/counter.png" alt="" class="footer__counter-img">
+                        </a>
+                        <a href="#" class="footer__counter-item">
+                            <img src="img/counter2.png" alt="" class="footer__counter-img">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="footer__bottom-block">
-                <span class="footer__bottom-text">
-                    © 2020 Все права защищены
-                </span>
-            </div>
+            
         </footer>
     </div>
+    <link rel="stylesheet" href="css/product.min.css">
     <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/product.js"></script>
 </body>
 </html>

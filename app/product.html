@@ -6,11 +6,11 @@
     <title>Product</title>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/global.min.css">
-    <link rel="stylesheet" href="img/sprite.svg">
     <link rel="stylesheet" href="css/start-product.min.css">
+    
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <header class="header">
             <div class="header__left-side">
                 <a href="#" class="logo header__logo">
@@ -19,10 +19,28 @@
                 <nav class="menu header__menu">
                     <ul>
                         <li><a href="#">Двигатели</a></li>
-                        <li><a href="#">КПП</a></li>
+                        <li><a href="#">КПП</a>
+                            <ul>
+                                <li><a href="#">МКПП</a></li>
+                                <li><a href="#">АКПП</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Стартеры</a></li>
                         <li><a href="#">Генераторы</a></li>
-                        <li><a href="#">Датчики</a></li>
+                        <li><a href="#">Датчики</a>
+                            <ul>
+                                <li><a href="#">Датчики холостого хода</a></li>
+                                <li><a href="#" class="menu__item--flex">Датчики двигателя <span class="icon-arrow-down"></span></a>
+                                    <ul>
+                                        <li><a href="#">Датчики заслонки</a></li>
+                                        <li><a href="#">Датчики цилиндров</a></li>
+                                        <li><a href="#">Большие и очень интересные датчики в ассортименте хорошего качества</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Специальные датчики слежения GPS за автомобилем</a></li>
+                                
+                            </ul>
+                        </li>
                         <li><a href="#">Рулевые рейки</a></li>
                         <li><a href="#">Радиаторы</a></li>
                         <li><a href="#">Фары</a></li>
@@ -32,22 +50,27 @@
                         <li><a href="#">Генераторы</a></li>
                     </ul>
                 </nav>
-                <nav class="menu-adaptive header__menu-adaptive" id="menu-adaptive">
+                <div class="menu-adaptive header__menu-adaptive" id="menu-adaptive">
                     <ul>
-                        <li><a href="#">Двигатели</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li id="menu-adaptive__item--submenu"><a href="#" >Двигатели<span class="icon-arrow-down"></span></a>
+                            <ul id="menu-adaptive__item--submenu-item">
+                                <li><a href="#">Двигатели</a></li>
+                                <li><a href="#">Двигатели</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">КПП</a></li>
+                        <li><a href="#">Форсунки</a></li>
+                        <li><a href="#">Генераторы</a></li>
                         <li><a href="#">Стартеры</a></li>
-                        <li><a href="#">Генераторы</a></li>
-                        <li><a href="#">Датчики</a></li>
-                        <li><a href="#">Рулевые рейки</a></li>
-                        <li><a href="#">Радиаторы</a></li>
-                        <li><a href="#">Фары</a></li>
-                        <li><a href="#">Фонари</a></li>
-                        <li><a href="#">ЭБУ</a></li>
-                        <li><a href="#">Капоты</a></li>
-                        <li><a href="#">Генераторы</a></li>
+                        <li><a href="#">Турбины</a></li>
+                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-bell"></span>Уведомления</a></li>
+                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-heart"></span>В закладках <sup>5</sup></a></li>
+                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-list"></span>Мои объявления</a></li>
+                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-cog"></span>Личный кабинет</a></li>
                     </ul>
-                </nav>
+                    <button class="menu-adaptive__search"><span class="icon-search"></span>Поиск в 1 клик</button>
+                </div>
                 <button class="header__burger burger" id="burger">
                     <span class="rect"></span>
                     <span class="rect"></span>
@@ -55,10 +78,14 @@
                 </button>
             </div>
             <div class="header__right-side">
-                <button class="town header__town">
-                    <svg class="icon icon-location-arrow"><use xlink:href="img/sprite.svg#icon-location-arrow"></use></svg>
-                    <span>Минск</span>
-                </button>
+                
+                
+                <div class="town header__town">
+                    <span class="icon-location-arrow"></span>
+                    <select name="" id="" class="custom-select town__select">
+                        <option value="1" class="town_option">Минск</option>
+                    </select>
+                </div>
                 <a href="#" class="post-an-ad header__post-an-ad">
                     <span class="post-an-ad__plus">+</span>
                     <span class="post-an-ad__text">Подать объявление</span>
@@ -79,7 +106,7 @@
             </div>
             <div class="page-content">
                 <div class="container">
-                    <div class="page-title product__title">Фара левая к Audi A3 III (8V) Рест. (2016) седан, 2016 г. </div>
+                    <h1 class="page-title product__title">Фара левая к Audi A3 III (8V) Рест. (2016) седан, 2016 г. </h1>
                 <div class="product__subtitle">
                     <span class="product__subtitle-item">Артикул: <span class="product__subtitle-item--black">17899920</span></span>
                     <span class="product__subtitle-item">5 часов назад</span>
@@ -125,16 +152,36 @@
                                 </div>
                                 <div class="swiper-container  product-item__gallery-thumbs">
                                     <div class="swiper-wrapper product-item__gallery-thumbs-wrapper">
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
-                                        <div class="swiper-slide product-item__side-img" style="background-image: url(img/product/side-img-1.jpg);"></div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
+                                        <div class="swiper-slide product-item__side-img-block">
+                                            <img src="img/product/side-img-1.jpg" alt="" class="product-item__side-img">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -146,31 +193,59 @@
                                 <div class="product-item__price-container">
                                     <div class="product-item__price">
                                         <div class="product-item__price-left">
-                                            <div class="product-item__price-left-container">2560<span class="product-item__price--ruble">₽</span></div>                                    
-                                            <div class="product-item__ailability"><svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> в наличии</div>
+                                            <div class="product-item__price-left-container">2560<span class="product-item__price--ruble rubl">e</span></div>                                    
+                                            <div class="product-item__ailability"><span class="icon-check"></span>в наличии</div>
                                         </div>
                                         <div class="product-item__price-right">
                                             35 <span class="product-item__other-price">$ </span><span class="product-item__other-price--other-ff"> или</span> 82<span class="product-item__other-price"> BYN</span>
                                         </div>                      
                                     </div>
                                     <div class="product-item__tegs">
-                                        <span class="product-item__tegs-item">Минск</span>
-                                        <span class="product-item__tegs-item">Belmotors.by</span>
+                                        <a href="#" class="product-item__tegs-item">Минск</a>
+                                        <a href="#" class="product-item__tegs-item">Belmotors.by</a>
                                         <span class="product-item__assessment">
-                                            <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                            <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                            <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                            <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                            <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                            
-                                            <span class="product-item__assessment-text">(12)</span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <a href="#" class="product-item__assessment-text">(12)</a>
                                         </span>
                                     </div>
                                     <div class="product-item__desc">
-                                        Мы являемся прямым импортером двигателей и других б/у запчастей из Европы, поэтому гарантируем качество и низкие цены на все модели двигателей б/у и комплектующих к ним. Смотреть цены на бу двигатели Звоните, покупайте запчасти без пробега по РБ - мы гарантируем качество, все документы! 
+                                        Мы являемся прямым импортером двигателей и других б/у запчастей из Европы, поэтому гарантируем качество и низкие цены на все модели двигателей б/у и комплектующих к ним. Смотреть цены на бу двигатели  
                                     </div>
+                                    <div class="product-item__desc">
+                                        Звоните, покупайте запчасти без пробега по РБ - мы гарантируем качество, все документы! <a href="#" class="product-item__link">Подробнее о продавце</a>
+                                    </div>
+                                    
                                     <div class="product-item__work-time-container">
-                                        Время работы: <span class="product-item__work-time">Пн: с 9.00 до 20.00</span><svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg>
+                                        Время работы: <div class="product-item__work-time">Пн: с 9.00 до 20.00
+                                            <div class="work-time product-item__work-time-menu">
+                                                <div class="work-time__item">
+                                                    <input type="checkbox" id="check1" class="work-time__time-input">
+                                                    <label for="check1" class="work-time__time-label"><span class="icon-check"></span>Понедельник</label>
+                                                    <div class="work-time__time-container">
+                                                        <span class="work-time__time">9.00</span> - <span class="work-time__time">18.00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="work-time__item">
+                                                    <input type="checkbox" id="check2" class="work-time__time-input">
+                                                    <label for="check2" class="work-time__time-label"><span class="icon-check"></span>Вторник</label>
+                                                    <div class="work-time__time-container">
+                                                        <span class="work-time__time">9.00</span> - <span class="work-time__time">20.00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="work-time__item work-time__item--day-off">
+                                                    <input type="checkbox" id="chec3" class="work-time__time-input">
+                                                    <label for="check3" class="work-time__time-label"><span class="icon-check"></span>Среда</label>
+                                                    <div class="work-time__time-container">
+                                                        выходной
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="icon-arrow-down"></span>
                                     </div>
                                     <div class="product-item__buttons-container">
                                         <button class="product-item__button product-item__button-number">
@@ -178,7 +253,7 @@
                                             Показать телефон
                                         </button>
                                         <button class="product-item__button product-item__button-message">
-                                            <svg class="icon icon-message product-item__button-img"><use xlink:href="img/sprite.svg#icon-message"></use></svg>
+                                            <span class="icon-message"></span>
                                             Написать сообщение
                                         </button>
                                     </div>
@@ -199,7 +274,7 @@
                                         </div>
                                     </div>
                                     <div class="product-item__bottom-side">
-                                        <button class="product-item__bottom-side-item product-item__save-bookmark"> <svg class="icon icon-heart"><use xlink:href="img/sprite.svg#icon-heart"></use></svg>Сохранить в закладки</button>
+                                        <button class="product-item__bottom-side-item product-item__save-bookmark"> <span class="icon-heart"></span>Сохранить в закладки</button>
                                         <button class="product-item__bottom-side-item product-item__report">Пожаловаться!</button>
                                     </div>
                                 </div>
@@ -213,154 +288,177 @@
                                     Двигатель к Audi A3, 2012 г.
                                 </a>
                                 <div class="product-side__container">
-                                    <div class="product-side__img-block">
+                                    <a href="#" class="product-side__img-block">
                                         <img src="img/product/main-img-1.jpg" alt="" class="product-side__img">
-                                    </div>
+                                    </a>
                                     <div class="product-side__desc-container">
+                                        
                                         <div class="product-side__desc">
-                                            Двигатели › Audi › A3 › 2003-2007 › 1.6 л, дизель, МКПП, хэтчбек
+                                            <a class="product-side__desc-link" href="#">Двигатели </a>›<a class="product-side__desc-link" href="#"> Audi </a>›<a class="product-side__desc-link" href="#"> A3 </a>›<a class="product-side__desc-link" href="#"> 2003-2007 </a>›<a class="product-side__desc-link" href="#"> 1.6 л, дизель, МКПП, хэтчбек</a>
+                                 
                                         </div>
+                                        <a href="#" class="product-side__title product-side__title--desktop">
+                                            Двигатель к Audi A3, 2012 г.
+                                        </a>
                                         <div class="product-side__block">
                                             <div class="product-side__state product-side__state--desktop">Состояние: б/у из Европы, мкпп 5 ст., небольшой люфт турбины, трещина горячей части турбины , цена указана без навесного, Модель двигателя...</div>
                                             <div class="product-item__price">
                                                 <div class="product-item__price-left product-side__price">
-                                                    <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble">₽</span></div>                                    
-                                                    <div class="product-item__ailability product-side__ailability"><svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg>в наличии</div>
+                                                    <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble rubl">e</span></div>                                    
+                                                    <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>                        
                                 </div>
                                 <div class="product-item__tegs">
-                                    <span class="product-item__tegs-item">Минск</span>
-                                    <span class="product-item__tegs-item">Belmotors.by</span>
+                                    <a href="#" class="product-item__tegs-item">Минск</a>
+                                    <a href="#" class="product-item__tegs-item">Belmotors.by</a>
                                     <span class="product-item__assessment">
-                                        <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                        <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                        <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                        <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                        <svg class="icon icon-star product-item__assessment-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                                        <span class="product-item__assessment-text">(12)</span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <a href="#" class="product-item__assessment-text">(12)</a>
                                     </span>
                                     <br>
-                                    <span class="product-item__tegs-item">5 часов назад</span>
-                                    <div class="product-side__state">Состояние: б/у из Европы, мкпп 5 ст., небольшой люфт турбины, трещина горячей части турбины , цена указана без навесного, Модель двигателя...</div>
+                                    <a href="#" class="product-item__tegs-item">5 часов назад</a>
+                                    
                                 </div>
+                                <div class="product-side__state">Состояние: б/у из Европы, мкпп 5 ст., небольшой люфт турбины, трещина горячей части турбины , цена указана без навесного, Модель двигателя...</div>
                             </div>
                             <div class="product-side">
                                 <a href="#" class="product-side__title">
+                                    
                                     Фара левая к Audi A3 III (8V) рест. (2016)  Седан, 2016 г. 
                                 </a>
                                 <div class="product-side__container">
-                                    <div class="product-side__img-block">
+                                    <a href="#" class="product-side__img-block">
                                         <img src="img/product/side-img-2.jpg" alt="" class="product-side__img">
-                                    </div>
+                                    </a>
                                     <div class="product-side__desc-container">
                                         <div class="product-side__desc">
-                                            Фары › Audi › A3 › 2003-2007
+                                            <a class="product-side__desc-link" href="#">Фары </a>›<a class="product-side__desc-link" href="#"> Audi </a>›<a class="product-side__desc-link" href="#"> A3 </a>›<a class="product-side__desc-link" href="#"> 2003-2007 </a>
+                                            
                                         </div>
+                                        <a href="#" class="product-side__title product-side__title--desktop">
+                                            Фара левая к Audi A3 III (8V) рест. (2016)  Седан, 2016 г. 
+                                        </a>
                                         <div class="product-side__block">
                                             <div class="product-side__state product-side__state--desktop">Запчасть из Германии, оригинал, отличное состояние (20 лет лежал на складе)</div>
                                             <div class="product-item__price">
                                                 <div class="product-item__price-left product-side__price">
-                                                    <div class="product-side__price-container">25670<span class="product-item__price--ruble product-side__price--ruble">₽</span></div>                                    
-                                                    <div class="product-item__ailability product-side__ailability"><svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg>в наличии</div>
+                                                    <div class="product-side__price-container">25670<span class="product-item__price--ruble product-side__price--ruble rubl">e</span></div>                                    
+                                                    <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
                                                 </div>  
                                             </div>
                                         </div>
                                     </div>                        
                                 </div>
                                 <div class="product-item__tegs">
-                                    <span class="product-item__tegs-item">Могилев</span>
-                                    <span class="product-item__tegs-item">Частное лицо</span>
-                                    <span class="product-item__tegs-item">1 мая 2020</span>
-                                    <div class="product-side__state">Запчасть из Германии, оригинал, отличное состояние (20 лет лежал на складе)</div>
+                                    <a href="#" class="product-item__tegs-item">Могилев</a>
+                                    <a href="#" class="product-item__tegs-item">Частное лицо</a>
+                                    <a href="#" class="product-item__tegs-item">1 мая 2020</a>\
                                 </div>
-                                
+                                <div class="product-side__state">Запчасть из Германии, оригинал, отличное состояние (20 лет лежал на складе)</div>
                             </div>
                         </div>
                         <div class="filters">
                             <div class="filters__container">
                                 <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item  filters__item--border-right">
-                                        <option value="1">Citroen</option>
+                                    <select id="normal-select-1" class="custom-select filters__item  filters__item--border-right">
+                                        <option class="select-dropdown__list-item filters__option"  value="1">Citroen</option>
+                                        <option class="select-dropdown__list-item filters__option"  value="2">Citroen</option>
+                                        <option class="select-dropdown__list-item filters__option"  value="3">Citroen</option>
+                                        <option class="select-dropdown__list-item filters__option"  value="4">Citroen</option>
                                     </select>
                                 </div>
                                 <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item  ">
-                                        <option value="1">Picasso</option>
+                                    <select id="normal-select-1" name="" class="custom-select filters__item  ">
+                                        <option class="select-dropdown__list-item filters__option" value="1">Picasso</option>
+                                        <option class="select-dropdown__list-item filters__option" value="1">Picasso</option>
+                                        <option class="select-dropdown__list-item filters__option" value="1">Picasso</option>
+                                        <option class="select-dropdown__list-item filters__option" value="1">Picasso</option>
                                     </select>
                                 </div>
                                 <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item filters__item--border-right ">
-                                        <option value="1">2010</option>
+                                    <select id="normal-select-1" name=""  class="custom-select filters__item filters__item--border-right ">
+                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
+                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
+                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
+                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
+                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
                                     </select>
                                 </div>
                                 <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item  ">
-                                        <option value="1">2020</option>
+                                    <select name="" id="" class="custom-select filters__item  ">
+                                        <option class="filters__option" value="1">2020</option>
                                     </select>
                                 </div>
                                 <div class="filters__select-container">
-                                    <select name="" id="" class="filters__item">
-                                        <option value="1">Датчик давления воздуха</option>
+                                    <select name="" id="" class="custom-select filters__item">
+                                        <option class="filters__option" value="1">Датчик давления воздуха</option>
                                     </select>
                                 </div>
                                 <div class="filters__select-container">
-                                    <select name="" id="" class="filters__item">
-                                        <option value="1">Продавец</option>
+                                    <select name="" id="" class="custom-select filters__item">
+                                        <option class="filters__option" value="1">Продавец</option>
                                     </select>
                                 </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item   filters__item--border-right">
-                                        <option value="1">Цена, от</option>
+                                <div class="filters__select-container filters__select-container--w50 filters__item--border-bottom-xl">
+                                    <select name="" id="" class="custom-select filters__item   filters__item--border-right ">
+                                        <option class="filters__option" value="1">Цена, от</option>
                                     </select>
                                 </div>
-                                <div class="filters__select-container filters__select-container--w50">
+                                <div class="filters__select-container filters__select-container--w50 filters__item--border-bottom">
                                     <input type="text" placeholder="200" class="filters__input ">
                                 </div>
-                                <div class="filters__select-container">
-                                    <select name="" id="" class="filters__item ">
-                                        <option value="1">Артикул запчасти</option>
-                                    </select>
+                                <div class="filters__select-container--hidden" id="filters__select-container--hidden">
+                                    <div class="filters__select-container filters__select-container--xl" id="filters__select-container--xl">
+                                        <select name="" id="" class="custom-select filters__item ">
+                                            <option class="filters__option" value="1">Артикул запчасти</option>
+                                        </select>
+                                    </div>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
+                                        <input type="text" placeholder="Объем" class="filters__input filters__item--border-right">
+                                    </div>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
+                                        <select name="" id="" class="custom-select filters__item  ">
+                                            <option class="filters__option" value="1">Бензин</option>
+                                        </select>
+                                    </div>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
+                                        <select name="" id="" class="custom-select filters__item  filters__item--border-right">
+                                            <option class="filters__option" value="1">Коробка</option>
+                                        </select>
+                                    </div>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
+                                        <select name="" id="" class="custom-select filters__item  ">
+                                            <option class="filters__option" value="1">Кузов</option>
+                                        </select>
+                                    </div>
+                                    <div class="filters__select-container filters__select-container--xl" id="filters__select-container--xl">
+                                        <select name="" id="" class="custom-select filters__item">
+                                            <option class="filters__option" value="1">Город</option>
+                                        </select>
+                                    </div>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
+                                        <select name="" id="" class="custom-select filters__item   filters__item--border-right filters__item--border-bottom">
+                                            <option class="filters__option" value="1">Дата подачи</option>
+                                        </select>
+                                    </div>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
+                                        <select name="" id="" class="custom-select filters__item  filters__item--border-bottom">
+                                            <option class="filters__option" value="1">Без пробега</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <input type="text" placeholder="Объем" class="filters__input filters__item--border-right">
-                                </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item  ">
-                                        <option value="1">Бензин</option>
-                                    </select>
-                                </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item  filters__item--border-right">
-                                        <option value="1">Коробка</option>
-                                    </select>
-                                </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item  ">
-                                        <option value="1">Кузов</option>
-                                    </select>
-                                </div>
-                                <div class="filters__select-container">
-                                    <select name="" id="" class="filters__item">
-                                        <option value="1">Город</option>
-                                    </select>
-                                </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item   filters__item--border-right filters__item--border-bottom">
-                                        <option value="1">Дата подачи</option>
-                                    </select>
-                                </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="filters__item   filters__item--border-bottom">
-                                        <option value="1">Без пробега</option>
-                                    </select>
-                                </div>
+                                
                             </div>
                             <div class="filters__buttons">
                                 <button class="filters__show">Показать — <span class="filters__show--total">6720</span></button>
-                                <button class="filters__more-settings">
+                                <button class="filters__more-settings" id="filters__more-settings">
                                     больше параметров
                                 </button>
                             </div>
@@ -370,146 +468,163 @@
             </div>
         </main>
         <footer class="footer">
-            <div class="footer__upper-block">
-                <div class="footer__menu-container">
-                    <div class="footer__menu">
-                        <div class="footer__menu-title">
-                            Каталог запчастей 
+            <div class="footer__container">
+                <div class="footer__upper-block">
+                
+                    <div class="footer__menu-container">
+                        <div class="footer__menu">
+                            <div class="footer__menu-title">
+                                Каталог запчастей 
+                            </div>
+                            <ul class="footer__menu-list footer__menu-list--column-2">
+                                <li><a href="#">Двигатели</a></li>
+                                <li><a href="#">КПП</a></li>
+                                <li><a href="#">Стартеры</a></li>
+                                <li><a href="#">Генераторы</a></li>
+                                <li><a href="#">Датчики</a></li>
+                                <li><a href="#">Рулевые рейки</a></li>
+                                <li><a href="#">Блоки управления</a></li>
+                                <li><a href="#">Лямбда зонды</a></li>
+                                <li><a href="#">Радиаторы</a></li>
+                                <li><a href="#">Кузовные запчасти</a></li>
+                                <li><a href="#">Форсунки</a></li>
+                                <li><a href="#">Фары</a></li>
+                                <li><a href="#">Фонари</a></li>
+                                <li><a href="#">Блоки цилиндров</a></li>
+                            </ul>
                         </div>
-                        <ul class="footer__menu-list footer__menu-list--column-2">
-                            <li><a href="#">Двигатели</a></li>
-                            <li><a href="#">КПП</a></li>
-                            <li><a href="#">Стартеры</a></li>
-                            <li><a href="#">Генераторы</a></li>
-                            <li><a href="#">Датчики</a></li>
-                            <li><a href="#">Рулевые рейки</a></li>
-                            <li><a href="#">Блоки управления</a></li>
-                            <li><a href="#">Лямбда зонды</a></li>
-                            <li><a href="#">Радиаторы</a></li>
-                            <li><a href="#">Кузовные запчасти</a></li>
-                            <li><a href="#">Форсунки</a></li>
-                            <li><a href="#">Фары</a></li>
-                            <li><a href="#">Фонари</a></li>
-                            <li><a href="#">Блоки цилиндров</a></li>
-                        </ul>
+                        <div class="footer__menu footer__menu--info footer__menu--w48">
+                            <div class="footer__menu-title">
+                                Информация  
+                            </div>
+                            <ul class="footer__menu-list ">
+                                <li><a href="#">О проекте</a></li>
+                                <li><a href="#">Новости и статьи</a></li>
+                                <li><a href="#">Условия возврата</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Реклама на сайте</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu footer__menu--seller footer__menu--w48">
+                            <div class="footer__menu-title">
+                                Для продавцов  
+                            </div>
+                            <ul class="footer__menu-list ">
+                                <li><a href="#">Разместить прайс</a></li>
+                                <li><a href="#">Условия сотрудничества</a></li>
+                                <li><a href="#">Рейтинг продавцов</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer__menu footer__menu--info footer__menu--w48">
-                        <div class="footer__menu-title">
-                            Информация  
-                        </div>
-                        <ul class="footer__menu-list ">
-                            <li><a href="#">О проекте</a></li>
-                            <li><a href="#">Новости и статьи</a></li>
-                            <li><a href="#">Условия возврата</a></li>
-                            <li><a href="#">Пользовательское соглашение</a></li>
-                            <li><a href="#">Политика конфиденциальности</a></li>
-                            <li><a href="#">Реклама на сайте</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__menu footer__menu--w48">
-                        <div class="footer__menu-title">
-                            Для продавцов  
-                        </div>
-                        <ul class="footer__menu-list ">
-                            <li><a href="#">Разместить прайс</a></li>
-                            <li><a href="#">Условия сотрудничества</a></li>
-                            <li><a href="#">Рейтинг продавцов</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                    <div class="footer__menu-container footer__menu-container--links footer__menu-container--justify-center">
+                       <a href="#" class="footer__menu-link-post">
+                            Подать объявление
+                       </a>
+                       <div class="footer__menu-text-links">
+                        <a href="#" class="footer__menu-link-site">
+                            Belmotors.by
+                       </a>
+                       <a href="#" class="footer__menu-link-lk">
+                            Личный кабинет 
+                       </a>
+                       </div>
                     </div>
                 </div>
-                <div class="footer__menu-container footer__menu-container--links footer__menu-container--justify-center">
-                   <a href="#" class="footer__menu-link-post">
-                        Подать объявление
-                   </a>
-                   <div class="footer__menu-text-links">
-                    <a href="#" class="footer__menu-link-site">
-                        Belmotors.by
-                   </a>
-                   <a href="#" class="footer__menu-link-lk">
-                        Личный кабинет 
-                   </a>
-                   </div>
+                <div class="footer__medium">
+                    <div class="footer__medium-block">
+                        <p class="footer__medium-text">
+                            Администрация сайта не несет ответственности за информацию, указанную в объявлении. Обязательно уточняйте у продавца подробную информацию о товаре (наличие, цена, комплектация, состояние и т.д.) <br>
+                        </p>
+                        <p class="footer__medium-text">
+                            Мы полагаем, что пользуясь данным веб-сайтом, вы даёте своё согласие с <a href="#">политикой безопасности</a> для данного сайта.
+                        </p>
+                    </div>
+                    <div class="footer__medium-block footer__medium-block--number">
+                        <div class="footer__number-container">
+                            <div class="footer__number-container-text">
+                                Звоните по вопросам <br> сотрудничества <br> и рекламы
+                            </div>
+                            <div class="footer__number-container-right">
+                                <a href="tel:+375293776622" class="footer__number"><sup>+375 (29)</sup> 377-66-22</a>
+                                <a href="tel:+375333776622" class="footer__number footer__number--xl"><sup>+375 (33)</sup> 377-66-22</a>
+                                <a href="mailto:info@onbu.ru" class="footer__mail">info@onbu.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer__social-container">
+                            <div class="footer__social-block">
+                                <a href="#" class="footer__social-link footer__social-link--vk">
+                                    <span class="icon-vk"></span>
+                                </a>
+                                <a href="#" class="footer__social-link footer__social-link--google">
+                                    <span class="icon-google"></span>
+                                </a>
+                                <a href="#" class="footer__social-link footer__social-link--inst">
+                                    <span class="icon-instagram"></span>
+                                </a>
+                                <a href="#" class="footer__social-link footer__social-link--odnoklassniki">
+                                    <span class="icon-odnoklassniki"></span>
+                                </a>
+                            </div>
+                            <a href="#" class="footer__social-logo">
+                                <span class="footer__social-logo-text">On</span>
+                                <span class="footer__social-logo-text">Bu</span>
+                                <span class="footer__social-logo-text footer__social-logo-text--mini">запчасти бу</span>
+                            </a>
+                        </div>
+                    </div>                    
+                    <div class="assessment footer__assessment">
+                        <div class="assessment__container">
+                            <div class="assessment__title">
+                                Оцените сайт
+                            </div>
+                            <div id="rater"></div>
+                        </div>
+                        <div class="assessment__total">
+                            <span class="assessment__total-item">Рейтинг: <span class="assessment__total-item--black">4.42</span></span>
+                            <span class="assessment__total-item assessment__total-quantity">Оценок: <span class="assessment__total-item--black">526</span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer__medium">
-                <div class="footer__medium-block">
-                    <p class="footer__medium-text">
-                        Администрация сайта не несет ответственности за информацию, указанную в объявлении. Обязательно уточняйте у продавца подробную информацию о товаре (наличие, цена, комплектация, состояние и т.д.) <br>
-                    </p>
-                    <p class="footer__medium-text">
-                        Мы полагаем, что пользуясь данным веб-сайтом, вы даёте своё согласие с <a href="#">политикой безопасности</a> для данного сайта.
-                    </p>
-                </div>
-                <div class="footer__medium-block footer__medium-block--number">
-                    <div class="footer__number-container">
-                        <div class="footer__number-container-text">
-                            Звоните по вопросам сотрудничества <br> и рекламы
-                        </div>
-                        <div class="footer__number-container-right">
-                            <a href="tel:+375293776622" class="footer__number"><sup>+375 (29)</sup> 377-66-22</a>
-                            <a href="mailto:info@onbu.ru" class="footer__mail">info@onbu.ru</a>
-                        </div>
-                    </div>
-                    <div class="footer__social-container">
-                        <div class="footer__social-block">
-                            <a href="#" class="footer__social-link footer__social-link--vk">
-                                <img src="img/social/vk.png" alt="">
-                            </a>
-                            <a href="#" class="footer__social-link footer__social-link--google">
-                                <img src="img/social/google.png" alt="">
-                            </a>
-                            <a href="#" class="footer__social-link footer__social-link--inst" style="background-image: url(img/social/inst-bg.jpg);">
-                                <img src="img/social/inst.png" alt="">
-                            </a>
-                            <a href="#" class="footer__social-link footer__social-link--odnoklassniki">
-                                <img src="img/social/odnoklassniki.png" alt="">
-                            </a>
-                        </div>
-                        <a href="#" class="footer__social-logo">
-                            <span class="footer__social-logo-text">On</span>
-                            <span class="footer__social-logo-text">Bu</span>
-                            <span class="footer__social-logo-text footer__social-logo-text--mini">запчасти бу</span>
+            
+            
+            <div class="footer__bottom-block">
+                <div class="footer__container footer__container--flex">
+                    <div class="footer__payment">
+                        <a href="#" class="footer__payment-item">
+                            <img src="img/payment/mastercard.png" alt="" class="footer__payment-img">
+                        </a>
+                        <a href="#" class="footer__payment-item">
+                            <img src="img/payment/mastercard-sc.png" alt="" class="footer__payment-img">
+                        </a>
+                        <a href="#" class="footer__payment-item">
+                            <img src="img/payment/visa.png" alt="" class="footer__payment-img">
+                        </a>
+                        <a href="#" class="footer__payment-item">
+                            <img src="img/payment/verified-by-visa.png" alt="" class="footer__payment-img">
                         </a>
                     </div>
-                </div>                    
-                <div class="assessment footer__assessment">
-                    <div class="assessment__container">
-                        <div class="assessment__title">
-                            Оцените сайт
-                        </div>
-                        <div class="assessment__stars">
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                            <button class="assessment__stars-item">
-                                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="assessment__total">
-                        <span class="assessment__total-item">Рейтинг: <span class="assessment__total-item--black">4.42</span></span>
-                        <span class="assessment__total-item assessment__total-quantity">Оценок: <span class="assessment__total-item--black">526</span></span>
+                    <span class="footer__bottom-text">
+                        © 2020 Все права защищены
+                    </span>
+                    <div class="footer__counter">
+                        <a href="#" class="footer__counter-item">
+                            <img src="img/counter.png" alt="" class="footer__counter-img">
+                        </a>
+                        <a href="#" class="footer__counter-item">
+                            <img src="img/counter2.png" alt="" class="footer__counter-img">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="footer__bottom-block">
-                <span class="footer__bottom-text">
-                    © 2020 Все права защищены
-                </span>
-            </div>
+            
         </footer>
     </div>
+    <link rel="stylesheet" href="css/product.min.css">
     <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/product.js"></script>
 </body>
 </html>

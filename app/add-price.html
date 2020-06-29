@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add price</title>
+    <link rel="stylesheet" href="css/global.min.css">
+    <link rel="stylesheet" href="css/start-add-price.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__left-side">
+                <a href="#" class="logo header__logo">
+                    <img src="img/header/logo.png" alt="" class="logo__img">
+                </a>
+                <nav class="menu header__menu header__menu--price">
+                    <ul>
+                        <li><a href="#">Мои объявления</a></li>
+                        <li><a href="#">Добавить прайс</a></li>
+                        <li><a href="#">Стоимость услуг</a></li>
+                        
+                    </ul>
+                </nav>                
+            </div>
+            <button class="header__burger burger" id="burger">
+                <span class="rect"></span>
+                <span class="rect"></span>
+                <span class="rect"></span>
+            </button>
+            <div class="header__right-side">
+                <a href="#" class="wallet">
+                    <span class="icon-wallet"></span><span class="wallet__text">6540 р.</span>
+                </a>
+                <a href="#" class="settings">
+                    <span class="icon-cog"></span><span class="settings__text">Настройки</span>
+                </a>
+            </div>
+            
+        </header>
+        <main class="main">
+            <div class="add-price">
+                <div class="container">
+                    <div class="add-price__upper">
+                        <h1 class="page-title">Прайс-листы</h1>
+                        <div class="add-price__subtitle">Добавить новый прайс в формате CSV,  XML или Excel</div>
+                        <label for="file" class="add-price__add-button">Добавить прайс</label>
+                        <input type="file" id="file" class="add-price__add-input">
+                        <div class="add-price__list-title">Добавленные прайсы</div>
+                    </div>
+                    <div class="add-price__main-container">
+                        <div class="add-price__item">
+                            <div class="add-price__item-container add-price__item-container--flex-md add-price__item-container--w66">
+                                <div class="add-price__item-container add-price__item-container--w41">
+                                    <div class="add-price__item-title">1. Легковые запчасти</div>
+                                    <div class="add-price__item-link-container">
+                                        <input type="checkbox" id="checkbox1" class="add-price__item-input">
+                                        <label for="checkbox1" class="add-price__item-link"><span class="icon-check"></span>http://test20.vsemesta.net/legk.xlsx</label>
+                                    </div>
+                                </div>
+                                <div class="add-price__stat">
+                                    <span class="add-price__stat-item"><span class="icon-check-circle"></span>загружено <span class="add-price__stat-item--total">(65 450)</span></span>
+                                    <span class="add-price__stat-item"><span class="icon-close-circle"></span>ошибки <span class="add-price__stat-item--total">(10)</span></span>
+                                </div>
+                            </div>
+                            <div class="add-price__item-right">
+                                <div class="add-price__item-container add-price__item-container--ml-auto">
+                                    <div class="add-price__date">
+                                        <span class="add-price__date-calendar">21 марта 2020 <span class="add-price__date-time">в 23:40</span> <span class="add-price__hint">последнее обновление</span></span>   
+                                    </div>
+                                    <div class="add-price__control">
+                                        <button class="add-price__control-item">обновить</button>
+                                        <button class="add-price__control-item">удалить</button>
+                                    </div>
+                                </div>
+                                <div class="add-price__item-container add-price__item-container--ml-auto">
+                                    <div class="add-price__buttons">
+                                        <button class="add-price__public">Опубликовать</button>
+                                        <button class="add-price__upload"><span class="icon-upload"></span><span class="add-price__hint">через 5 часов</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <div class="add-price__item">
+                            <div class="add-price__item-container add-price__item-container--flex-md add-price__item-container--w66">
+                                <div class="add-price__item-container add-price__item-container--w41">
+                                    <div class="add-price__item-title">2. Запчасти к джипам</div>
+                                    <div class="add-price__item-link-container">
+                                        <input type="checkbox" id="checkbox2" class="add-price__item-input">
+                                        <label for="checkbox2" class="add-price__item-link"><span class="icon-check"></span>jeep.csv</label>
+                                    </div>
+                                </div>
+                                <div class="add-price__stat">
+                                    <span class="add-price__stat-item"><span class="icon-check-circle"></span>загружено <span class="add-price__stat-item--total">(2 567)</span></span>
+                                </div>
+                            </div>
+                            <div class="add-price__item-right">
+                                <div class="add-price__item-container add-price__item-container--ml-auto">
+                                    <div class="add-price__date">
+                                        <span class="add-price__date-calendar">20 марта 2020 <span class="add-price__date-time">в 9:23</span> <span class="add-price__hint">последнее обновление</span></span>   
+                                    </div>
+                                    <div class="add-price__control">
+                                        <button class="add-price__control-item">настройки</button>
+                                        <button class="add-price__control-item">обновить</button>
+                                        <button class="add-price__control-item">удалить</button>
+                                    </div>
+                                </div>
+                                <div class="add-price__item-container add-price__item-container--ml-auto">
+                                    <div class="add-price__buttons">
+                                        <button class="add-price__public add-price__public--green">Опубликовано<span class="add-price__hint">снять с публикации</span></button>
+                                        <button class="add-price__upload"><span class="icon-upload"></span><span class="add-price__hint">через 5 часов</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <div class="add-price__item">
+                            <div class="add-price__item-container add-price__item-container--flex-md add-price__item-container--w66">
+                                <div class="add-price__item-container add-price__item-container--w41">
+                                    <div class="add-price__item-title">3. Двигатели</div>
+                                    <div class="add-price__item-link-container">
+                                        <input type="checkbox" id="checkbox3" class="add-price__item-input">
+                                        <label for="checkbox3" class="add-price__item-link"><span class="icon-check"></span>http://test20.vsemesta.net/dvig.xlsx</label>
+                                    </div>
+                                </div>
+                                <div class="add-price__stat">
+                                    <span class="add-price__stat-item"><span class="icon-check-circle"></span>загружено <span class="add-price__stat-item--total">(205)</span></span>
+                                </div>
+                            </div>
+                            <div class="add-price__item-right">
+                                <div class="add-price__item-container add-price__item-container--ml-auto">
+                                    <div class="add-price__date">
+                                        <span class="add-price__date-calendar">20 марта 2020 <span class="add-price__date-time">в 9:23</span> <span class="add-price__hint">последнее обновление</span></span>   
+                                    </div>
+                                    <div class="add-price__control">
+                                        
+                                        <button class="add-price__control-item">обновить</button>
+                                        <button class="add-price__control-item">удалить</button>
+                                    </div>
+                                </div>
+                                <div class="add-price__item-container add-price__item-container--ml-auto">
+                                    <div class="add-price__buttons">
+                                        <button class="add-price__public add-price__public--green">Опубликовано<span class="add-price__hint">снять с публикации</span></button>
+                                        <button class="add-price__upload add-price__upload--green"><span class="icon-upload"></span><span class="add-price__hint">через 5 часов</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="add-price__bottom-container">
+                        <div class="add-price__chooses">Выбрано: 1</div>
+                        <div class="add-price__management">
+                            <button class="add-price__management-item">Вкл</button>
+                            <button class="add-price__management-item">Выкл</button>
+                            <button class="add-price__management-item">Обновить</button>
+                            <button class="add-price__management-item">Удалить</button>
+                            <button class="add-price__management-item">Вверх!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
