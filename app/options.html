@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>options</title>
-
+    
     <link rel="stylesheet" href="css/options.min.css">
 </head>
 <body>
@@ -55,7 +55,7 @@
                             </div>
                             <div class="options__line-row">
                                 <div class="options__item-container options__item-container--w33">
-                                    <select name="select" id="select1" class="custom-select">
+                                    <select data-trigger name="select" id="select1" class="custom-select">
                                         <option  value="Организация или ИП">
                                             Организация или ИП
                                         </option>
@@ -126,7 +126,7 @@
                                 </div>
                                 <div class="options__line-row">
                                     <div class="options__item-container options__item-container--w33-3">
-                                        <select id="select2"  class="custom-select">
+                                        <select id="select2" data-trigger   class="custom-select">
                                             <option class="select-dropdown__list-item" value="Выбрать основной регион">
                                                 Выбрать основной регион
                                             </option>
@@ -139,19 +139,18 @@
                                         <input type="text" name="phone" class="options__input">
                                     </div>
                                     <div class="options__item-container options__item-container--w10">
-                                        <select id="select3"  class="custom-select">
+                                        <select id="select3" data-trigger   class="custom-select">
                                             <option class="select-dropdown__list-item" value="МТС">МТС</option>
                                             <option class="select-dropdown__list-item" value="МТС">МТС</option>
                                         </select>
                                     </div>
                                     <button class="options__line-button">
-                                        <span class="icon-plus"></span>
                                         <span class="options__line-button-text">
                                             добавить номер
                                         </span>
                                     </button>
                                     <div class="options__item-container options__item-container--w33-3">
-                                        <select id="select9"  class="custom-select">
+                                        <select id="select9" data-trigger   class="custom-select">
                                             <option>
                                                 Выбрать доп. регион
                                             </option>
@@ -164,7 +163,7 @@
                                         <input type="text" class="options__input" placeholder="Введите адрес склада">
                                     </div>
                                     <div class="options__item-container options__item-container--w33-3">
-                                        <select  id="select4"  class="custom-select">
+                                        <select  id="select4" data-trigger   class="custom-select">
                                             <option>
                                                 Время работы
                                             </option>
@@ -197,13 +196,12 @@
                                         </div>
                                     </div>
                                     <button class="options__line-button">
-                                        <span class="icon-plus"></span>
                                         <span class="options__line-button-text">
                                             добавить еще регион
                                         </span>
                                     </button>
                                     <div class="options__item-container options__item-container--w33-3">
-                                        <select id="select5"  class="custom-select">
+                                        <select id="select5" data-trigger  class="custom-select">
                                             <option class="select-dropdown__list-item" value="Выбрать основной регион">
                                                 Выбрать доп. регион
                                             </option>
@@ -225,7 +223,7 @@
                                     <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Вайбер" class="options__input"></div>
                                     <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Cкайп" class="options__input"></div>
                                     <div class="options__item-container options__item-container--w33-3">
-                                        <select id="select6"  class="custom-select">
+                                        <select id="select6"  data-trigger  class="custom-select">
                                             <option class="select-dropdown__list-item" value="Выбрать основной регион">
                                                 Выбрать доп. регион
                                             </option>
@@ -249,9 +247,7 @@
                         
                         </div>
                         <div class="options__big-button-container">
-                            <div class="options__big-button">
-                               <span> меньше параметров</span>
-                            </div>
+                            
                         </div>
                         <div class="options__line">
                             <div class="options__line-left">
@@ -262,7 +258,7 @@
                             <div class="options__line-row">
                                 
                                 <div class="options__item-container options__item-container--w33-3">
-                                    <select id="select7" class="custom-select">
+                                    <select id="select7" data-trigger  class="custom-select">
                                         <option>Белорусский рубль</option>
                                         <option>Белорусский рубль</option>
                                     </select>
@@ -282,7 +278,7 @@
                                     <label for="checkbox1" class="add-price__item-link"><span class="icon-check"></span>присылать запросы от клиентов из быстрого заказа</label>
                                 </div>
                                 <div class="options__item-container options__item-container--w25">
-                                    <select id="select8" class="custom-select">
+                                    <select id="select8" data-trigger  class="custom-select">
                                         <option>По всем товарам</option>
                                         <option>По всем товарам</option>
                                     </select>
@@ -453,6 +449,7 @@
         </main>
     </div>
     <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" type="text/css" href="css/global.min.css" />
-    <script src="js/options.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/options.js" ></script>
 </body>
 </html>

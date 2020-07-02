@@ -120,27 +120,12 @@
         align-items: center;
         width: 100%;
         margin-right: -8px;
-
-        .add-price__item-link-container{
-            margin-right: 10px;
-        }
         
     }
     &__line-button{
         display: flex;
         align-items: center;
         margin: 0 8px 8px;
-        .icon-plus{
-            font-size: 12px;
-            line-height: 15px;
-            color: #8b929c;
-            margin-right: 7px;
-            flex-shrink: 0;
-            &:before {
-                content: "\e915";
-                font-family: "icomoon";
-                }
-        }
         &-text{
             font-size: 13px;
             line-height: 17px;
@@ -168,40 +153,6 @@
         line-height: 22px;
         color: #4d5156;
         box-sizing: border-box;
-    }
-    &__big-button-container{
-        padding: 20px 0;
-        margin-bottom: 20px;
-    }
-    &__big-button{
-        position: absolute;
-        width: 100%;
-        text-align: center;
-
-        &:before{
-            content: '';
-            position: absolute;
-            left: 0;
-            width: 100%;
-            border: 1px dashed #cfd3d6;
-            height: 1px;
-            box-sizing: border-box;
-            transform: translateY(-50%);
-            top: 50%;
-        }
-
-        span{
-            cursor: pointer;
-            position: relative;
-            display: inline-block;
-            padding: 0 15px;
-            background-color: #f7f7f7;
-            font-size: 15px;
-            line-height: 22px;
-            color: #8b929c;
-            font-family: "Arial";
-        }
-        
     }
     &__textarea{
         display: block;
@@ -256,7 +207,7 @@
         font-size: 12px;
         line-height: 16px;
         color: #8b929c;
-        @media screen and (min-width:550px){
+        @media screen and (min-width:767px){
             margin-top: 0;
         }
     }
@@ -355,12 +306,6 @@
     &__social{
         display: flex;
         align-items: center;
-    }
-    &__social-item {
-        transition: .3s;
-        &:hover{
-            opacity: .8;
-        }
     }
     &__social-item + &__social-item{
         margin-left: 15px;
@@ -471,7 +416,6 @@
             text-decoration: underline;
         }
     }
-  
     &__desc{
         margin-top: 18px;
         font-family: 'Open Sans';

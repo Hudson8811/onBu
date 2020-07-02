@@ -81,8 +81,13 @@
                 
                 <div class="town header__town">
                     <span class="icon-location-arrow"></span>
-                    <select name="" id="" class="custom-select town__select">
-                        <option value="1" class="town_option">Минск</option>
+                    <select  class="form-control"
+                    data-trigger
+                    name="town-select"
+                    id="town-select" class="custom-select town__select">
+                        <option value="Минск">Минск</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
                     </select>
                 </div>
                 <a href="#" class="post-an-ad header__post-an-ad">
@@ -105,7 +110,7 @@
             </div>
             <div class="page-content">
                 <div class="container">
-                    <h1 class="page-title product__title">Фара левая к Audi A3 III (8V) Рест. (2016) седан, 2016 г. </h1>
+                    <h1 class="product__title">Фара левая к Audi A3 III (8V) Рест. (2016) седан, 2016 г. </h1>
                 <div class="product__subtitle">
                     <span class="product__subtitle-item">Артикул: <span class="product__subtitle-item--black">17899920</span></span>
                     <span class="product__subtitle-item">5 часов назад</span>
@@ -192,7 +197,7 @@
                                 <div class="product-item__price-container">
                                     <div class="product-item__price">
                                         <div class="product-item__price-left">
-                                            <div class="product-item__price-left-container">2560<span class="product-item__price--ruble rubl">e</span></div>                                    
+                                            <div class="product-item__price-left-container">2560<span class="product-item__price--ruble">₽</span></div>                                    
                                             <div class="product-item__ailability"><span class="icon-check"></span>в наличии</div>
                                         </div>
                                         <div class="product-item__price-right">
@@ -248,7 +253,6 @@
                                     </div>
                                     <div class="product-item__buttons-container">
                                         <button class="product-item__button product-item__button-number">
-                                            <img src="img/phone.png" alt="" class="product-item__button-img">
                                             Показать телефон
                                         </button>
                                         <button class="product-item__button product-item__button-message">
@@ -273,7 +277,7 @@
                                         </div>
                                     </div>
                                     <div class="product-item__bottom-side">
-                                        <button class="product-item__bottom-side-item product-item__save-bookmark"> <span class="icon-heart"></span>Сохранить в закладки</button>
+                                        <button class="product-item__bottom-side-item product-item__save-bookmark" id="save-bookmark"> <span class="icon-heart"></span>Сохранить в закладки</button>
                                         <button class="product-item__bottom-side-item product-item__report">Пожаловаться!</button>
                                     </div>
                                 </div>
@@ -283,9 +287,11 @@
                     <div class="side-bar">
                         <div class="side-bar__container">
                             <div class="product-side">
-                                <a href="#" class="product-side__title">
-                                    Двигатель к Audi A3, 2012 г.
-                                </a>
+                                <div class="product-side__title-container">
+                                    <a href="#" class="product-side__title">
+                                        Двигатель к Audi A3, 2012 г.
+                                    </a>
+                                </div>
                                 <div class="product-side__container">
                                     <a href="#" class="product-side__img-block">
                                         <img src="img/product/main-img-1.jpg" alt="" class="product-side__img">
@@ -303,7 +309,7 @@
                                             <div class="product-side__state product-side__state--desktop">Состояние: б/у из Европы, мкпп 5 ст., небольшой люфт турбины, трещина горячей части турбины , цена указана без навесного, Модель двигателя...</div>
                                             <div class="product-item__price">
                                                 <div class="product-item__price-left product-side__price">
-                                                    <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble rubl">e</span></div>                                    
+                                                    <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble">₽</span></div>                                    
                                                     <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
                                                 </div>
                                             </div>
@@ -328,10 +334,11 @@
                                 <div class="product-side__state">Состояние: б/у из Европы, мкпп 5 ст., небольшой люфт турбины, трещина горячей части турбины , цена указана без навесного, Модель двигателя...</div>
                             </div>
                             <div class="product-side">
-                                <a href="#" class="product-side__title">
-                                    
-                                    Фара левая к Audi A3 III (8V) рест. (2016)  Седан, 2016 г. 
-                                </a>
+                                <div class="product-side__title-container">
+                                    <a href="#" class="product-side__title">
+                                        Фара левая к Audi A3 III (8V) рест. (2016)  Седан, 2016 г. 
+                                    </a>
+                                </div>
                                 <div class="product-side__container">
                                     <a href="#" class="product-side__img-block">
                                         <img src="img/product/side-img-2.jpg" alt="" class="product-side__img">
@@ -348,7 +355,7 @@
                                             <div class="product-side__state product-side__state--desktop">Запчасть из Германии, оригинал, отличное состояние (20 лет лежал на складе)</div>
                                             <div class="product-item__price">
                                                 <div class="product-item__price-left product-side__price">
-                                                    <div class="product-side__price-container">25670<span class="product-item__price--ruble product-side__price--ruble rubl">e</span></div>                                    
+                                                    <div class="product-side__price-container">25670<span class="product-item__price--ruble product-side__price--ruble">₽</span></div>                                    
                                                     <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
                                                 </div>  
                                             </div>
@@ -364,92 +371,191 @@
                             </div>
                         </div>
                         <div class="filters">
-                            <div class="filters__container">
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select id="normal-select-1" class="custom-select filters__item  filters__item--border-right">
-                                        <option class="select-dropdown__list-item filters__option"  value="1">Citroen</option>
-                                        <option class="select-dropdown__list-item filters__option"  value="2">Citroen</option>
-                                        <option class="select-dropdown__list-item filters__option"  value="3">Citroen</option>
-                                        <option class="select-dropdown__list-item filters__option"  value="4">Citroen</option>
-                                    </select>
+                            <div class="filters__container ">
+                                <div class="filters__select-container filters__select-container--w50 ">
+                                    
+                                    <select
+                                    class="form-control"
+                                    data-trigger
+                                    name="choices-single-default"
+                                    id="choices-single-default"
+                                  >
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Citroen">Citroen</option>
+                                  </select>
+                                </div>
+                                <div class="filters__select-container filters__select-container--w50 filters__select-container--no-border-left">
+                                
+                                    <select
+                                    class="form-control"
+                                    data-trigger
+                                    name="choices-single-default-2"
+                                    id="choices-single-default-2"
+                                  >
+                                    <option value="Picasso">Picasso</option>
+                                    <option value="Picasso">Picasso</option>
+                                    <option value="Picasso">Picasso</option>
+                                  </select>
                                 </div>
                                 <div class="filters__select-container filters__select-container--w50">
-                                    <select id="normal-select-1" name="" class="custom-select filters__item  ">
-                                        <option class="select-dropdown__list-item filters__option" value="1">Picasso</option>
-                                        <option class="select-dropdown__list-item filters__option" value="1">Picasso</option>
-                                        <option class="select-dropdown__list-item filters__option" value="1">Picasso</option>
-                                        <option class="select-dropdown__list-item filters__option" value="1">Picasso</option>
-                                    </select>
+                                    <select
+                                    class="form-control"
+                                    data-trigger
+                                    name="choices-single-default-3"
+                                    id="choices-single-default-3"
+                                  >
+                                    <option value="2010">2010</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2010">2010</option>
+                                  </select>
                                 </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select id="normal-select-1" name=""  class="custom-select filters__item filters__item--border-right ">
-                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
-                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
-                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
-                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
-                                        <option class="select-dropdown__list-item filters__option" value="1">2010</option>
-                                    </select>
-                                </div>
-                                <div class="filters__select-container filters__select-container--w50">
-                                    <select name="" id="" class="custom-select filters__item  ">
-                                        <option class="filters__option" value="1">2020</option>
-                                    </select>
+                                <div class="filters__select-container filters__select-container--w50 filters__select-container--no-border-left">
+                                    <select
+                                    class="form-control"
+                                    data-trigger
+                                    name="choices-single-default-4"
+                                    id="choices-single-default-4"
+                                    placeholder="2020"
+                                  >
+                                     <option value="">2020</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2020">2020</option>
+                                  </select>
                                 </div>
                                 <div class="filters__select-container">
-                                    <select name="" id="" class="custom-select filters__item">
-                                        <option class="filters__option" value="1">Датчик давления воздуха</option>
-                                    </select>
+                                    
+                                    <select
+                                    class="form-control"
+                                    data-trigger
+                                    name="choices-single-default-5"
+                                    id="choices-single-default-5"
+                                  >
+                                    <option value="Датчик давления воздуха">Датчик давления воздуха</option>
+                                    <option value="Датчик давления воздуха">Датчик давления воздуха</option>
+                                    <option value="Датчик давления воздуха">Датчик давления воздуха</option>
+                                  </select>
                                 </div>
                                 <div class="filters__select-container">
-                                    <select name="" id="" class="custom-select filters__item">
-                                        <option class="filters__option" value="1">Продавец</option>
-                                    </select>
-                                </div>
-                                <div class="filters__select-container filters__select-container--w50 filters__item--border-bottom-xl">
-                                    <select name="" id="" class="custom-select filters__item   filters__item--border-right ">
-                                        <option class="filters__option" value="1">Цена, от</option>
-                                    </select>
+                                   
+                                    <select
+                                    class="form-control"
+                                    data-trigger
+                                    name="choices-single-default-6"
+                                    id="choices-single-default-6"
+                                    placeholder="Продавец"
+                                  >
+                                    <option value="">Продавец</option>
+                                    <option value="Продавец">Продавец</option>
+                                    <option value="Продавец">Продавец</option>
+                                    <option value="Продавец">Продавец</option>
+                                  </select>
                                 </div>
                                 <div class="filters__select-container filters__select-container--w50 filters__item--border-bottom">
-                                    <input type="text" placeholder="200" class="filters__input ">
+                                    <input type="text" placeholder="Цена, от" class="filters__input ">
+                                </div>
+                                <div class="filters__select-container filters__select-container--w50 filters__item--border-bottom filters__select-container--no-border-left">
+                                    <input type="text" value="200" class="filters__input " placeholder="Цена, до"> 
                                 </div>
                                 <div class="filters__select-container--hidden" id="filters__select-container--hidden">
                                     <div class="filters__select-container filters__select-container--xl" id="filters__select-container--xl">
-                                        <select name="" id="" class="custom-select filters__item ">
-                                            <option class="filters__option" value="1">Артикул запчасти</option>
+                                       
+                                        <select
+                                            class="form-control"
+                                            data-trigger
+                                            name="choices-single-default-7"
+                                            id="choices-single-default-7"
+                                            placeholder="Артикул запчасти"
+                                        >
+                                            <option value="">Артикул запчасти</option>
+                                            <option value="Артикул запчасти">Артикул запчасти</option>
+                                            <option value="Артикул запчасти">Артикул запчасти</option>
+                                            <option value="Артикул запчасти">Артикул запчасти</option>
                                         </select>
                                     </div>
-                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl " id="filters__select-container--xl">
                                         <input type="text" placeholder="Объем" class="filters__input filters__item--border-right">
                                     </div>
-                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
-                                        <select name="" id="" class="custom-select filters__item  ">
-                                            <option class="filters__option" value="1">Бензин</option>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl filters__select-container--no-border-left" id="filters__select-container--xl">
+                                       
+                                        <select
+                                        class="form-control"
+                                        data-trigger
+                                        name="choices-single-default-8"
+                                        id="choices-single-default-8"
+                                        >
+                                        <option value="Бензин">Бензин</option>
+                                        <option value="Бензин">Бензин</option>
+                                        <option value="Бензин">Бензин</option>
                                         </select>
+                                        
                                     </div>
                                     <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
-                                        <select name="" id="" class="custom-select filters__item  filters__item--border-right">
-                                            <option class="filters__option" value="1">Коробка</option>
+                                        
+                                        <select
+                                        class="form-control"
+                                        data-trigger
+                                        name="choices-single-default-9"
+                                        id="choices-single-default-9"
+                                        >
+                                        <option value="Коробка">Коробка</option>
+                                        <option value="Коробка">Коробка</option>
+                                        <option value="Коробка">Коробка</option>
                                         </select>
                                     </div>
-                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
-                                        <select name="" id="" class="custom-select filters__item  ">
-                                            <option class="filters__option" value="1">Кузов</option>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl filters__select-container--no-border-left" id="filters__select-container--xl">
+                                        <select
+                                        class="form-control"
+                                        data-trigger
+                                        name="choices-single-default-10"
+                                        id="choices-single-default-10"
+                                        >
+                                        <option value="Кузов">Кузов</option>
+                                        <option value="Кузов">Кузов</option>
+                                        <option value="Кузов">Кузов</option>
                                         </select>
                                     </div>
                                     <div class="filters__select-container filters__select-container--xl" id="filters__select-container--xl">
-                                        <select name="" id="" class="custom-select filters__item">
-                                            <option class="filters__option" value="1">Город</option>
+                                        <select
+                                        class="form-control"
+                                        data-trigger
+                                        name="choices-single-default-11"
+                                        id="choices-single-default-11"
+                                        placeholder="Город"
+                                        >
+                                        <option value="">Город</option>
+                                        <option value="Город">Город</option>
+                                        <option value="Город">Город</option>
+                                        <option value="Город">Город</option>
                                         </select>
                                     </div>
-                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
-                                        <select name="" id="" class="custom-select filters__item   filters__item--border-right filters__item--border-bottom">
-                                            <option class="filters__option" value="1">Дата подачи</option>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl " id="filters__select-container--xl">
+                                        <select
+                                        class="form-control"
+                                        data-trigger
+                                        name="choices-single-default-12"
+                                        id="choices-single-default-12"
+                                        placeholder="Дата подачи"
+                                        >
+                                        <option value="">Дата подачи</option>
+                                        <option value="Дата подачи">Дата подачи</option>
+                                        <option value="Дата подачи">Дата подачи</option>
+                                        <option value="Дата подачи">Дата подачи</option>
                                         </select>
                                     </div>
-                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl" id="filters__select-container--xl">
-                                        <select name="" id="" class="custom-select filters__item  filters__item--border-bottom">
-                                            <option class="filters__option" value="1">Без пробега</option>
+                                    <div class="filters__select-container filters__select-container--w50 filters__select-container--xl filters__select-container--no-border-left" id="filters__select-container--xl">
+                                        <select
+                                        class="form-control"
+                                        data-trigger
+                                        name="choices-single-default-13"
+                                        id="choices-single-default-13"
+                                        placeholder="Без пробега"
+                                        >
+                                        <option value="">Без пробега</option>
+                                        <option value="Без пробега">Без пробега</option>
+                                        <option value="Без пробега">Без пробега</option>
+                                        <option value="Без пробега">Без пробега</option>
                                         </select>
                                     </div>
                                 </div>
@@ -458,7 +564,7 @@
                             <div class="filters__buttons">
                                 <button class="filters__show">Показать — <span class="filters__show--total">6720</span></button>
                                 <button class="filters__more-settings" id="filters__more-settings">
-                                    больше параметров
+                                   
                                 </button>
                             </div>
                         </div>
@@ -578,7 +684,13 @@
                             <div class="assessment__title">
                                 Оцените сайт
                             </div>
-                            <div id="rater"></div>
+                            <div class="rating" data-total-value="0">
+                                <div class="rating__item" data-item-value="5"><span class="icon-star"></span></div>
+                                <div class="rating__item" data-item-value="4"><span class="icon-star"></span></div>
+                                <div class="rating__item" data-item-value="3"><span class="icon-star"></span></div>
+                                <div class="rating__item" data-item-value="2"><span class="icon-star"></span></div>
+                                <div class="rating__item" data-item-value="1"><span class="icon-star"></span></div>
+                            </div>
                         </div>
                         <div class="assessment__total">
                             <span class="assessment__total-item">Рейтинг: <span class="assessment__total-item--black">4.42</span></span>
@@ -625,7 +737,8 @@
     <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" type="text/css" href="css/product.min.css" />
     <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" type="text/css" href="css/swiper.min.css" />
     <script src="js/swiper.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/choices.min.js"></script>
+    <!-- <script src="js/index.js" async defer></script> -->
     <script src="js/product.js"></script>
 </body>
 </html>

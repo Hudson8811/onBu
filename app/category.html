@@ -10,6 +10,58 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="sub" id="sub"></div>
+        <div class="menu-adaptive header__menu-adaptive" id="menu-adaptive">
+            <ul id="first-level">
+                <li><a href="#">Главная</a></li>
+                <li class="menu-adaptive__item--submenu"><a href="#" >Двигатели<span class="icon-arrow-down"></span></a>
+                    <ul class="menu-adaptive__item--submenu-item" >
+                        <li class="menu-adaptive__submenu-head">
+                            Двигатели
+                            <span class="menu-adaptive__submenu-head-back">
+                                
+                            </span>
+                        </li>
+                        <li><a href="#">Двигатели</a></li>
+                        <li><a href="#">Двигатели</a></li>
+                    </ul>
+                </li>
+                <li class="menu-adaptive__item--submenu"><a href="#" >Двигатели<span class="icon-arrow-down"></span></a>
+                    <ul class="menu-adaptive__item--submenu-item" >
+                        <li class="menu-adaptive__submenu-head">
+                            Двигатели
+                            <span class="menu-adaptive__submenu-head-back">
+                                
+                            </span>
+                        </li>
+                        <li><a href="#">Двигатели</a></li>
+                        <li><a href="#">Двигатели</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">КПП</a>
+                    <ul class="menu-adaptive__item--submenu-item" id="">
+                        <li class="menu-adaptive__submenu-head">
+                            Двигатели
+                            <span class="menu-adaptive__submenu-head-back">
+                                
+                            </span>
+                        </li>
+                        <li><a href="#">Двигатели</a></li>
+                        <li><a href="#">Двигатели</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Форсунки</a></li>
+                <li><a href="#">Генераторы</a></li>
+                <li><a href="#">Стартеры</a></li>
+                <li><a href="#">Турбины</a></li>
+                <li><a href="#" class="menu-adaptive__item--white"><span class="icon-bell"></span>Уведомления</a></li>
+                <li><a href="#" class="menu-adaptive__item--white"><span class="icon-heart"></span>В закладках <sup>5</sup></a></li>
+                <li><a href="#" class="menu-adaptive__item--white"><span class="icon-list"></span>Мои объявления</a></li>
+                <li><a href="#" class="menu-adaptive__item--white"><span class="icon-cog"></span>Личный кабинет</a></li>
+            </ul>
+            <button class="menu-adaptive__search"><span class="icon-search"></span>Поиск в 1 клик</button>
+            
+        </div>
         <header class="header">
             <div class="header__left-side">
                 <a href="#" class="logo header__logo">
@@ -49,27 +101,7 @@
                         <li><a href="#">Генераторы</a></li>
                     </ul>
                 </nav>
-                <div class="menu-adaptive header__menu-adaptive" id="menu-adaptive">
-                    <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li id="menu-adaptive__item--submenu"><a href="#" >Двигатели<span class="icon-arrow-down"></span></a>
-                            <ul id="menu-adaptive__item--submenu-item">
-                                <li><a href="#">Двигатели</a></li>
-                                <li><a href="#">Двигатели</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">КПП</a></li>
-                        <li><a href="#">Форсунки</a></li>
-                        <li><a href="#">Генераторы</a></li>
-                        <li><a href="#">Стартеры</a></li>
-                        <li><a href="#">Турбины</a></li>
-                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-bell"></span>Уведомления</a></li>
-                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-heart"></span>В закладках <sup>5</sup></a></li>
-                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-list"></span>Мои объявления</a></li>
-                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-cog"></span>Личный кабинет</a></li>
-                    </ul>
-                    <button class="menu-adaptive__search"><span class="icon-search"></span>Поиск в 1 клик</button>
-                </div>
+                
                 <button class="header__burger burger" id="burger">
                     <span class="rect"></span>
                     <span class="rect"></span>
@@ -81,8 +113,13 @@
                 
                 <div class="town header__town">
                     <span class="icon-location-arrow"></span>
-                    <select name="" id="" class="custom-select town__select">
-                        <option value="1" class="town_option">Минск</option>
+                    <select  class="form-control"
+                    data-trigger
+                    name="town-select"
+                    id="town-select" class="custom-select town__select">
+                        <option value="Минск">Минск</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
                     </select>
                 </div>
                 <a href="#" class="post-an-ad header__post-an-ad">
@@ -106,37 +143,37 @@
             </div>
             <div class="page-content">
                 <div class="container">
-                    <div class="page-title category__title">Запчасти БУ для Audi A3 2003-2010</div>
+                    <h1 class="category__title">Запчасти БУ для Audi A3 2003-2010</h1>
                 </div>
                 <div class="container page-content__container container--category-md">   
                                     
                     <div class="category">                        
                         <div class="category__block">
                             <div class="category__filter-container">
-                                <div class="category__filter-item category__filter-item--w50">
-                                    <select name="" id="" class="custom-select category__select">
+                                <div class="category__filter-item category__filter-item--w50 ">
+                                    <select name="" id="" data-trigger class="custom-select category__select">
                                         <option value="1" class="category__option">Марка</option>
                                     </select>
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50">
-                                    <select name="" id="" class="custom-select category__select">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--no-border-left">
+                                    <select name="" id="" data-trigger class="custom-select category__select">
                                         <option value="1" class="category__option">Модель</option>
                                     </select>
                                 </div>
                                 <div class="category__filter-item category__filter-item--w50">
-                                    <select name="" id="" class="custom-select category__select category__select--border-bottom">
+                                    <select name="" id="" data-trigger class="custom-select category__select category__select--border-bottom">
                                         <option value="1" class="category__option">Год выпуска</option>
                                     </select>
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50">
-                                    <select name="" id="" class="custom-select category__select category__select--border-bottom">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--no-border-left">
+                                    <select name="" id="" data-trigger class="custom-select category__select category__select--border-bottom">
                                         <option value="1" class="category__option">Год выпуска</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="category__filter-container">
-                                <div class="category__filter-item">
-                                    <select name="" id="" class="custom-select category__select category__select--border-bottom category__select--border-bottom-md-dn">
+                            <div class="category__filter-container ">
+                                <div class="category__filter-item category__filter-item--no-border-top">
+                                    <select name="" id="" data-trigger class="custom-select category__select category__select--border-bottom category__select--border-bottom-md-dn ">
                                         <option value="1" class="category__option ">Название запчасти</option>
                                     </select>
                                     <div class="category__buttons category__buttons--poa category__buttons--md-dn">
@@ -147,38 +184,38 @@
                                 </div>
                             </div>
                             <div class="category__filter-container">
-                                <div class="category__filter-item">
-                                    <select name="" id="" class="custom-select category__select">
+                                <div class="category__filter-item category__filter-item--no-border-top">
+                                    <select name="" id="" data-trigger class="custom-select category__select">
                                         <option value="1" class="category__option">Продавец</option>
                                     </select>
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50 category__filter-item--border-bottom">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--border-bot">
                                     <input type="text" class="category__input" placeholder="Цена, от">
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50 category__filter-item--border-bottom">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--border-bot category__filter-item--no-border-left">
                                     <input type="text" class="category__input" placeholder="Цена, до">
                                 </div>
                             </div>                            
                         </div>
-                        <div class="category__block category__block--md" id="category__block--md">
-                            <div class="category__filter-container">
-                                <div class="category__filter-item category__filter-item--w50">
-                                    <select name="" id="" class="custom-select category__select">
+                        <div class="category__block category__block--md " id="category__block--md">
+                            <div class="category__filter-container border-top-none">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--no-border-top">
+                                    <select name="" id="" data-trigger class="custom-select category__select">
                                         <option value="1" class="category__option">Объем</option>
                                     </select>
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50">
-                                    <select name="" id="" class="custom-select category__select">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--no-border-left category__filter-item--no-border-top">
+                                    <select name="" id="" data-trigger class="custom-select category__select">
                                         <option value="1" class="category__option">Бензин</option>
                                     </select>
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50">
-                                    <select name="" id="" class="custom-select category__select category__select--border-bottom">
+                                <div class="category__filter-item category__filter-item--w50 ">
+                                    <select name="" id="" data-trigger class="custom-select category__select category__select--border-bottom">
                                         <option value="1" class="category__option">Коробка</option>
                                     </select>
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50">
-                                    <select name="" id="" class="custom-select category__select category__select--border-bottom">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--no-border-left">
+                                    <select name="" id="" data-trigger class="custom-select category__select category__select--border-bottom">
                                         <option value="1" class="category__option">Кузов</option>
                                     </select>
                                 </div>
@@ -192,18 +229,18 @@
                                 </div>
                             </div>
                             <div class="category__filter-container">
-                                <div class="category__filter-item">
-                                    <select name="" id="" class="custom-select category__select">
+                                <div class="category__filter-item category__filter-item--no-border-top">
+                                    <select name="" id="" data-trigger class="custom-select category__select ">
                                         <option value="1" class="category__option">Город</option>
                                     </select>
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50 category__filter-item--border-bottom">
-                                    <select name="" id="" class="custom-select category__select">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--border-bottom category__filter-item--no-border-top">
+                                    <select name="" id="" data-trigger class="custom-select category__select">
                                         <option value="1" class="category__option">Дата подачи</option>
                                     </select>
                                 </div>
-                                <div class="category__filter-item category__filter-item--w50 category__filter-item--border-bottom">
-                                    <select name="" id="" class="custom-select category__select">
+                                <div class="category__filter-item category__filter-item--w50 category__filter-item--border-bottom category__filter-item--no-border-left">
+                                    <select name="" id="" data-trigger class="custom-select category__select">
                                         <option value="1" class="category__option">Без пробега</option>
                                     </select>
                                 </div>
@@ -262,7 +299,7 @@
                                             <div class="product-side__state product-side__state--desktop">Состояние: б/у из Европы, мкпп 5 ст., небольшой люфт турбины, трещина горячей части турбины , цена указана без навесного, Модель двигателя...</div>
                                             <div class="product-item__price">
                                                 <div class="product-item__price-left product-side__price">
-                                                    <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble rubl">e</span></div>                                    
+                                                    <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble">₽</span></div>                                    
                                                     <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
                                                 </div>
                                             </div>
@@ -307,7 +344,7 @@
                                             <div class="product-side__state product-side__state--desktop">Запчасть из Германии, оригинал, отличное состояние (20 лет лежал на складе)</div>
                                             <div class="product-item__price">
                                                 <div class="product-item__price-left product-side__price">
-                                                    <div class="product-side__price-container">25670<span class="product-item__price--ruble product-side__price--ruble rubl">e</span></div>                                    
+                                                    <div class="product-side__price-container">25670<span class="product-item__price--ruble product-side__price--ruble"> ₽</span></div>                                    
                                                     <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
                                                 </div>  
                                             </div>
@@ -459,7 +496,13 @@
                             <div class="assessment__title">
                                 Оцените сайт
                             </div>
-                            <div id="rater"></div>
+                            <div class="rating" data-item-value="0">
+                                <div class="rating__item" data-item-value="5"><span class="icon-star"></span></div>
+                                <div class="rating__item" data-item-value="4"><span class="icon-star"></span></div>
+                                <div class="rating__item" data-item-value="3"><span class="icon-star"></span></div>
+                                <div class="rating__item" data-item-value="2"><span class="icon-star"></span></div>
+                                <div class="rating__item" data-item-value="1"><span class="icon-star"></span></div>
+                            </div>
                         </div>
                         <div class="assessment__total">
                             <span class="assessment__total-item">Рейтинг: <span class="assessment__total-item--black">4.42</span></span>
@@ -506,9 +549,12 @@
             <span class="fast-search__text">Быстрый поиск <br> запчастей</span>
         </a>
     </div>
-    <script src="js/index.js"></script>
-    <script src="js/category.js"></script>
+    <!-- <script src="js/index.js" async defer></script> -->
     <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" type="text/css" href="css/global.min.css" />
     <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" type="text/css" href="css/category.min.css" />
+    <script src="js/choices.min.js"></script>
+    <script src="js/category.js" defer></script>
+    
+    
 </body>
 </html>

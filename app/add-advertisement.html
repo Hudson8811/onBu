@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add advert</title>
+    
     <link rel="stylesheet" href="css/start-add-advenrtisement.min.css">
 </head>
 <body>
@@ -40,14 +41,14 @@
         <main class="main">
             <form class="advertisement">
                 <div class="container">
-                    <div class="page-title">Добавить объявление</div>
+                    <h1>Добавить объявление</h1>
                     <div class="advertisement__inner">
                         <div class="advertisement__block">
                             <div class="advertisement__container">
                                 <div class="advertisement__item">
                                     <div class="advertisement__item-title">Город объявления</div>
                                     <div class="advertisement__item-block advertisement__item-block--max-width advertisement__item-block--w100-md">
-                                        <select name="" id="" class="advertisement__select custom-select">
+                                        <select data-trigger name="" id="" class="advertisement__select custom-select">
                                             <option value="1" class="advertisement__option">Выбрать город</option>
                                             <option value="1" class="advertisement__option">Выбрать город</option>
                                             <option value="1" class="advertisement__option">Выбрать город</option>
@@ -62,17 +63,17 @@
                                     <div class="advertisement__item-title">Выбрать марку и модель авто</div>
                                     <div class="advertisement__item-block advertisement__item-block--md">
                                         <div class="advertisement__item-container">
-                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-right advertisement__select--border-bottom">
+                                            <select data-trigger name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-right advertisement__select--border-bottom">
                                                 <option value="1" class="advertisement__option">Марка</option>
                                                 <option value="1" class="advertisement__option">Марка</option>
                                                 <option value="1" class="advertisement__option">Марка</option>
                                             </select>
-                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-bottom">
+                                            <select data-trigger name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-bottom">
                                                 <option value="1" class="advertisement__option">Модель</option>
                                                 <option value="1" class="advertisement__option">Модель</option>
                                                 <option value="1" class="advertisement__option">Модель</option>
                                             </select>
-                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--year advertisement__select--w50 advertisement__select--border-right advertisement__select--border-left advertisement__select--border-right-md">
+                                            <select  data-trigger name="" id="" class="custom-select advertisement__select advertisement__select--year advertisement__select--w50 advertisement__select--border-right advertisement__select--border-left advertisement__select--border-right-md">
                                                 <option value="1" class="advertisement__option">2003</option>
                                                 <option value="1" class="advertisement__option">2003</option>
                                                 <option value="1" class="advertisement__option">2003</option>
@@ -81,17 +82,17 @@
                                         </div>
                                         <div class="advertisement__item-container">
                                             <input type="text" class="advertisement__input advertisement__input--w50 advertisement__input--border-right advertisement__input--border-bottom" placeholder="Объем">
-                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-bottom">
+                                            <select data-trigger name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-bottom">
                                                 <option value="1" class="advertisement__option">Бензин</option>
                                                 <option value="1" class="advertisement__option">Бензин</option>
                                                 <option value="1" class="advertisement__option">Бензин</option>
                                             </select>
-                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-right advertisement__select--border-left">
+                                            <select data-trigger name="" id="" class="custom-select advertisement__select advertisement__select--w50 advertisement__select--border-right advertisement__select--border-left">
                                                 <option value="1" class="advertisement__option">Коробка</option>
                                                 <option value="1" class="advertisement__option">Коробка</option>
                                                 <option value="1" class="advertisement__option">Коробка</option>
                                             </select>
-                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--w50 ">
+                                            <select  data-trigger name="" id="" class="custom-select advertisement__select advertisement__select--w50 ">
                                                 <option value="1" class="advertisement__option">Кузов</option>
                                                 <option value="1" class="advertisement__option">Кузов</option>
                                                 <option value="1" class="advertisement__option">Кузов</option>
@@ -104,7 +105,7 @@
                                     <div class="advertisement__item-title">Название запчасти</div>
                                     <div class="advertisement__item-container">
                                         <div class="advertisement__item-block">
-                                            <select name="" id="" class="custom-select advertisement__select">
+                                            <select  data-trigger name="" id="" class="custom-select advertisement__select">
                                                 <option value="1" class="advertisement__option">Название запчасти</option>
                                                 <option value="1" class="advertisement__option">Название запчасти</option>
                                                 <option value="1" class="advertisement__option">Название запчасти</option>
@@ -122,14 +123,14 @@
                                             <input type="text" class="advertisement__input advertisement__input--mb" placeholder="Введите цену">
                                         </div>
                                         <div class="advertisement__item-block">
-                                            <select name="" id="" class="custom-select advertisement__select advertisement__select--ml">
+                                            <select data-trigger name="" id="" class="custom-select advertisement__select advertisement__select--ml">
                                                 <option value="1" class="advertisement__option">Белорусский рубль</option>
                                                 <option value="1" class="advertisement__option">Белорусский рубль</option>
                                                 <option value="1" class="advertisement__option">Белорусский рубль</option>
                                             </select>
                                         </div>
                                         <div class="advertisement__price-right">
-                                            35 <span class="advertisement__other-price">$ </span><span class="advertisement__other-price--other-ff"> или</span> 8280<span class="advertisement__other-price rubl"> e</span>
+                                            35 <span class="advertisement__other-price">$ </span><span class="advertisement__other-price--other-ff"> или</span> 8280<span class="advertisement__other-price"> ₽</span>
                                         </div>  
                                     </div>
                                 </div>
@@ -174,8 +175,8 @@
                             <div class="advertisement__hidden-settings" id="advertisement__hidden-settings">
                                 <div class="advertisement__item advertisement__item--p">
                                     <div class="advertisement__item-title">Наличие на складе</div>
-                                    <div class="advertisement__item-container">
-                                        <select name="" id="" class="custom-select advertisement__select">
+                                    <div class="advertisement__item-container advertisement__item-container--max-width">
+                                        <select data-trigger name="" id="" class="custom-select advertisement__select">
                                             <option value="1" class="advertisement__option">В наличии</option>
                                             <option value="1" class="advertisement__option">В наличии</option>
                                             <option value="1" class="advertisement__option">В наличии</option>
@@ -184,8 +185,8 @@
                                 </div>
                                 <div class="advertisement__item advertisement__item--p">
                                     <div class="advertisement__item-title">Состояние</div>
-                                    <div class="advertisement__item-container">
-                                        <select name="" id="" class="custom-select advertisement__select">
+                                    <div class="advertisement__item-container advertisement__item-container--max-width">
+                                        <select data-trigger name="" id="" class="custom-select advertisement__select">
                                             <option value="1" class="advertisement__option">Б/у</option>
                                             <option value="1" class="advertisement__option">Б/у</option>
                                             <option value="1" class="advertisement__option">Б/у</option>
@@ -198,7 +199,7 @@
                                         <input type="text" class="advertisement__input advertisement__input--mt" placeholder="Введите код купона">
                                         <br>
                                         <input type="text" class="advertisement__input advertisement__input--mt advertisement__input--sale" placeholder="Скидка">
-                                        <select name="" id="" class="custom-select advertisement__select advertisement__select--mt advertisement__select--w50">
+                                        <select data-trigger name="" id="" class="custom-select advertisement__select advertisement__select--mt advertisement__select--w50">
                                             <option value="1" class="advertisement__option">Процент</option>
                                             <option value="1" class="advertisement__option">Процент</option>
                                             <option value="1" class="advertisement__option">Процент</option>
@@ -209,9 +210,11 @@
                         </div>
                         <div class="product-side advertisement__product-side">
                             <div class="advertisement__how-seen">Как выглядит объявление</div>
-                            <a href="#" class="product-side__title">
-                                Двигатель к Audi A3, 2012 г.
-                            </a>
+                            <div class="product-side__title-container">
+                                <a href="#" class="product-side__title">
+                                    Двигатель к Audi A3, 2012 г.
+                                </a>
+                            </div>
                             <div class="product-side__container">
                                 <a href="#" class="product-side__img-block">
                                     <img src="img/product/main-img-1.jpg" alt="" class="product-side__img">
@@ -227,7 +230,7 @@
                                         
                                         <div class="product-item__price">
                                             <div class="product-item__price-left product-side__price">
-                                                <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble rubl">e</span></div>                                    
+                                                <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble">₽</span></div>                                    
                                                 <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
                                             </div>
                                         </div>
@@ -262,10 +265,11 @@
                 
             </form>
         </main>
-        <script src="js/add-advenrtisement.js"></script>
+
         <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" type="text/css" href="css/global.min.css" />
         <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" type="text/css" href="css/add-advenrtisement.min.css" />
-        
+        <script src="js/choices.min.js"></script>
+        <script src="js/add-advenrtisement.js"></script>
     </div>
 </body>
 </html>

@@ -1,10 +1,4 @@
-@font-face{
-    font-family: 'ALS Rubl';
-    src: url(../fonts/rouble.otf);
-}
-.rubl{
-    font-family: 'ALS Rubl';
-}
+
 .page-content{
     @media screen and (min-width: 1630px){
         &__container{
@@ -52,6 +46,9 @@
     @media screen and (min-width: 1630px){
         padding: 0;
         overflow: visible;
+    }
+    &__title-container{
+        margin-bottom: 10px;
     }
     &__title{        
         font-family: 'Roboto';
@@ -247,7 +244,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 14px;
+        margin-top: 42px;
         transform: initial !important;
         @media screen and (min-width: 1024px){
             justify-content: start;
@@ -269,13 +266,17 @@
         }       
     }
     &__main-img{
-        width: 320px;
+        width: 100vw;
+        height: auto;
         @media screen and (min-width: 768px){
             width: 640px !important;
             height: 480px;
         }
         @media screen and (min-width: 1024px){
             width: auto !important;
+        }
+        @media screen and (max-width: 500px){
+            width: 60%;
         }
     }
     .swiper-slide-thumb-active{
@@ -576,6 +577,13 @@
         opacity: 0;
         z-index: -1;
         transition: .3s;
+        left: 50%;
+        transform: translateX(-58%);
+        @media screen and (min-width:768px){
+            right: 0;
+            transform: none;
+            left: auto;
+        }
     }
     &__buttons-container{
         margin-top: 25px;
@@ -598,12 +606,27 @@
         font-family: 'Open Sans';
         transition: .3s;
         &:hover{
-            filter: brightness(0.9);
+            background-color: #8b929c;
         }
     }
     &__button-number{
+        position: relative;
         background-color: #97b431;
         color: #fff;
+        &::before{
+            content: '';
+           margin-right: 9px;
+           flex-shrink: 0;
+            width: 14px;
+            height: 17px;
+            background-image: url(../img/phone.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        &:hover{
+            background-color: #819b25;
+        }
     }
     &__button-img{
         margin-right: 8px;
@@ -678,7 +701,7 @@
         &:hover{
             border-bottom-color: #b3b6bb;
         }
-        &:focus{
+        &.js-active{
             color: red;
             border-bottom-color: red;
             .icon-heart{
@@ -728,28 +751,19 @@
     
     &__time-input[type=checkbox] + &__time-label{
         position: relative;
-        padding-left: 24px;
+        padding-left: 9px;
         font-family: 'Open Sans';
         font-size: 14px;
         line-height: 17px;
         color: #252525;
-        &::before{
-            content: "";
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border: 1px solid #d3d3d3;
-            left: 0;
-            bottom: 50%;
-            transform: translateY(50%);
-        }
+        
         
     }
-    &__time-input[type=checkbox]:checked + &__time-label{
-        .icon-check{
-            display: inline;
-        }
-    }
+    // &__time-input[type=checkbox]:checked + &__time-label{
+    //     .icon-check{
+    //         display: inline;
+    //     }
+    // }
     &__time-label{
         cursor: pointer;
         .icon-check{

@@ -57,19 +57,19 @@
         &--w50{
             width: 50%;
         }
-        &--border-right{
-            border-right: none !important;
-        }
+        // &--border-right{
+        //     border-right: none !important;
+        // }
         // &--border-bottom-xl{
         //     border-bottom: 1px solid #d3d3d3;
         //     @media screen and (min-width: 1630px){
         //         border-bottom: none;
         //     }
         // }
-        &--border-bottom{
-            border-bottom: 1px solid #d3d3d3;
+        // &--border-bottom{
+        //     border-bottom: 1px solid #d3d3d3;
             
-        }
+        // }
         &::after{
             content: '';
             position: absolute;
@@ -92,7 +92,20 @@
         line-height: 22px;
         color: #4d5156;
         box-sizing: border-box;
-        border-bottom: none;
+        height: 39px;
+
+        &::placeholder{
+            font-family: 'Roboto';
+        font-size: 13px;
+        line-height: 22px;
+        color: #8b929c;
+
+        &[readonly]{
+            &::placeholder{
+                color: red;
+            }
+        }
+        }
     }
     &__buttons{
         text-align: center;
@@ -122,19 +135,47 @@
         color: #8b929c;
         text-decoration: underline;
         text-align: center;
+        &:after{
+            content: 'больше параметров';
+        }
+        &.js-active{
+            &:after{
+                content: 'меньше параметров';
+            }
+        }
     }
     &__select-container{
         position: relative;
         width: 100%;
+        &--no-border-left{
+            .choices__inner{
+                border-left-width: 0;
+            }
+            .filters__input {
+                border-left-width: 0;
+            }
+        }
+        .choices__inner{
+            border-top-width: 0;
+        }
+        .filters__input {
+            border-top: 0;
+        }
         &--w50{
             width: 50%;
+            &:nth-child(1),&:nth-child(2){
+                .choices__inner{
+                    border-top-width: 1px;
+                }
+            }
+           
         }
         &--hidden{
             display: none;
-            @media screen and (min-width: 1630px){
-                display: flex;
-                flex-wrap: wrap;
-            }
+            // @media screen and (min-width: 1630px){
+            //     display: flex;
+            //     flex-wrap: wrap;
+            // }
             .filters__select-container{
                 &:first-child{
                     .custom-select__current{
@@ -300,3 +341,4 @@
         margin: 50px auto 0;
     }
 }
+
