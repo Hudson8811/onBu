@@ -2,11 +2,18 @@
 @font-face {
     font-display:swap;
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?qfkkhg');
-    src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf') format('truetype'),
-      url('../fonts/icomoon.woff?') format('woff'),
-      url('fonts/icomoon.svg?qfkkhg#icomoon') format('svg');
+    src:  
+      url('../fonts/icomoon.woff?') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+ 
+@font-face {
+    font-display:swap;
+    font-family: 'icomoon-additional';
+    src: 
+      url('../fonts/icomoon-add.woff?') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -1633,7 +1640,7 @@ header{
                 position: absolute;
                 font-family: 'Open Sans';
                 right: 0;
-                top: -10%;
+                top: 15%;
             }           
         }
         li:last-child{
@@ -2278,8 +2285,28 @@ select{
 }
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
     .visible-md {
         display: none !important;
+    }
+}
+
+
+
+.icon-shopping-basket{
+  
+    font-family: "icomoon-additional";
+    font-style: normal;
+    &:before{
+        content: "\f291";
+    }
+}
+
+.icon-login{
+    
+    font-family: "icomoon-additional";
+    font-style: normal;
+    &:before{
+        content: "\e919";
     }
 }

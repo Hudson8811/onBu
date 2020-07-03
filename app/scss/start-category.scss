@@ -375,6 +375,16 @@
         &:hover{
             text-decoration: none;
         }
+
+        &.category__more-settings:before{
+            content: "больше параметров";
+            &.js-active{
+                &::before{
+                    content: 'меньше параметров';
+                }
+            }
+        }
+        
     }
     &__bottom-settings{
         position: relative;

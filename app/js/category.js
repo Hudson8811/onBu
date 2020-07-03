@@ -1,44 +1,57 @@
-let elem = document.getElementById('burger');
-  let elem1 = document.getElementById('menu-adaptive');
-  let elem2 = document.getElementById('sub');
-  var bodyNode = document.body || document.getElementsByTagName('body')[0];
-  elem.onclick = function(event){
-    bodyNode.classList.toggle('js-hidden');
-    elem.classList.toggle('active');    
-    elem1.classList.toggle('active');
-    elem2.classList.toggle('active-block');
-   
-    
-  }
-  // let submenu_list = document.querySelectorAll('.menu-adaptive__item--submenu-item');
-  // let submenu_item = document.querySelectorAll('.menu-adaptive__item--submenu');
+let mobileBurger = document.getElementById('burger');
+let mobileMenu = document.getElementsByClassName('mobile-navbar');
+let mobileClose = document.getElementsByClassName('main-menu__close');
+let mobileBg = document.getElementById('menu-bg');
 
-  
-  // for (var i = 0; i < submenu_item; i++) {
-  //   submenu_item[i].addEventListener('click', function (){
-  //     this.classList.toggle('active');
-  //   });
-  // }
+mobileBurger.onclick = function(event){
+  event.preventDefault();
+  mobileMenu['0'].classList.add("open");
+  mobileBg.style.display = "block";
+}
+mobileClose[0].onclick = function(event){
+  event.preventDefault();
+  mobileMenu['0'].classList.remove("open");
+  setTimeout(() => mobileBg.style.display = "none", 300);
+}
 
-  const submenu_list = document.querySelectorAll('.menu-adaptive__item--submenu');
-  const submenu_item = document.querySelectorAll('.menu-adaptive__item--submenu-item');
-  const first_level =  document.getElementById('first-level');
- 
+mobileBg.onclick = function(event){
+  event.preventDefault();
+  mobileMenu['0'].classList.remove("open");
+  setTimeout(() => mobileBg.style.display = "none", 300);
+}
 
-   for (var i = 0; i < submenu_list.length; i++) {
-    submenu_list[i].addEventListener('click',  (e) => {
+let mobileNext = document.getElementsByClassName('main-menu__link next');
+for (var i=0;i<mobileNext.length; i++) {
+  mobileNext[i].onclick = function(event){
     event.preventDefault();
-    theTarget = event.target;
-    theTarget2 = theTarget.parentElement;
-    theTarget2.classList.toggle("active");
-    first_level.classList.toggle("js-active")
-});
+    this.nextElementSibling.classList.add('active');
+    this.nextElementSibling.style.display = "block";
+    setMyMenu();
+  }
+}
+
+let mobileBack= document.getElementsByClassName('mobile-menu-back');
+for (var i=0;i<mobileBack.length; i++) {
+  mobileBack[i].onclick = function(event){
+    event.preventDefault();
+    this.parentElement.parentElement.classList.remove('active');
+    setTimeout(() => this.parentElement.parentElement.style.display = "none", 300);
+    setMyMenu();
+  }
+}
+
+function setMyMenu() {
+  let mobileMyMenu = document.getElementById('main-menu-mobile');
+  let activeMenus = document.getElementsByClassName('main-menu active');
+  mobileMyMenu.style.left = -100 * activeMenus.length +'%';
+  document.getElementsByClassName('mobile-navbar')[0].scrollTop = 0;
 }
 
 let elem3 = document.getElementById('category__more-settings');
   let elem4 = document.getElementById('category__block--md');
   elem3.onclick = function(event){
     elem4.classList.toggle('active-block');
+     elem3.classList.toggle("js-active")
   }
 
   // let elem5 = document.getElementById('menu-adaptive__item--submenu');

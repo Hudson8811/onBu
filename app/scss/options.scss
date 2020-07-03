@@ -126,6 +126,11 @@
         display: flex;
         align-items: center;
         margin: 0 8px 8px;
+
+        .fas{
+            color: #8b929c;
+            margin-right: 8px;
+        }
         &-text{
             font-size: 13px;
             line-height: 17px;
@@ -608,6 +613,8 @@
         font-size: 13px;
         line-height: 17px;
         color: #4d5156;
+        cursor: pointer;
+        margin-right: 20px;
         .icon-check{
             display: none;
             position: absolute;

@@ -173,7 +173,7 @@
             font-size: 7px;
             left: 5px;
             top: 50%;
-            margin-top: -3.5px;
+            margin-top: -1.5px;
             color: #000;
             &::before{
                 content: "\e90a";
@@ -309,6 +309,7 @@
         
     }
     &__public{
+        position: relative;
         display: block;
         padding: 8px 10px;
         max-width: 115px;
