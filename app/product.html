@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/start-product.min.css">
-    
 </head>
 <body>
     <div class="wrapper" id="wrapper">
+        <div id="menu-bg"></div>
         <header class="header">
             <div class="header__left-side">
                 <a href="#" class="logo header__logo">
@@ -49,27 +50,6 @@
                         <li><a href="#">Генераторы</a></li>
                     </ul>
                 </nav>
-                <div class="menu-adaptive header__menu-adaptive" id="menu-adaptive">
-                    <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li id="menu-adaptive__item--submenu"><a href="#" >Двигатели<span class="icon-arrow-down"></span></a>
-                            <ul id="menu-adaptive__item--submenu-item">
-                                <li><a href="#">Двигатели</a></li>
-                                <li><a href="#">Двигатели</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">КПП</a></li>
-                        <li><a href="#">Форсунки</a></li>
-                        <li><a href="#">Генераторы</a></li>
-                        <li><a href="#">Стартеры</a></li>
-                        <li><a href="#">Турбины</a></li>
-                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-bell"></span>Уведомления</a></li>
-                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-heart"></span>В закладках <sup>5</sup></a></li>
-                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-list"></span>Мои объявления</a></li>
-                        <li><a href="#" class="menu-adaptive__item--white"><span class="icon-cog"></span>Личный кабинет</a></li>
-                    </ul>
-                    <button class="menu-adaptive__search"><span class="icon-search"></span>Поиск в 1 клик</button>
-                </div>
                 <button class="header__burger burger" id="burger">
                     <span class="rect"></span>
                     <span class="rect"></span>
@@ -97,6 +77,205 @@
                 </a>
             </div>
         </header>
+
+        <nav class="mobile-navbar visible-md">
+            <div id="mymenu">
+                <ul class="main-menu" id="main-menu-mobile">
+                    <li class="main-menu__header">
+                        <a href="#" class="main-menu__close"><i class="fas fa-chevron-left"></i> Закрыть</a>
+                        <div class="title">Главная</div>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link next"><span>Каталог</span>
+                            <span class="main-menu__right-arrow"><i class="fas fa-chevron-right"></i></span></a>
+                        <ul class="main-menu">
+                            <li class="main-menu__header">
+                                <a href="#" class="back mobile-menu-back">
+                                    <i class="fas fa-chevron-left"></i> Назад
+                                </a>
+                                <div class="title">
+                                    <span>Каталог</span>
+                                    <span class="main-menu__right-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link"><span>Мебель в гостиную <sup class="sup">52</sup></span></a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link"><span>Гипсокартонные системы <sup class="sup">8</sup></span></a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link next"><span>Штукатурные системы <sup class="sup">670</sup></span>
+                                    <span class="main-menu__right-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="main-menu">
+                                    <li class="main-menu__header">
+                                        <a href="#" class="back  mobile-menu-back">
+                                            <i class="fas fa-chevron-left"></i> Назад
+                                        </a>
+                                        <div class="title">
+                                            <span>Штукатурные системы</span>
+                                            <span class="main-menu__right-arrow"><i class="fas fa-chevron-right"></i></span>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu__item">
+                                        <a href="#" class="main-menu__link"><span>Штукатурные системы</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link"><span>Гипсокартонные системы <sup class="sup">98</sup></span></a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link next">
+								<span class="main-menu__img">
+									<img src="img/main-menu-img1.png" alt="">
+								</span>
+                                    <span>Строительные смеси <sup class="sup">71</sup></span>
+                                    <span class="main-menu__right-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                                <ul class="main-menu">
+                                    <li class="main-menu__header">
+                                        <a href="#" class="back  mobile-menu-back">
+                                            <i class="fas fa-chevron-left"></i> Назад
+                                        </a>
+                                        <div class="title">
+                                            <span>Строительные смеси</span>
+                                            <span class="main-menu__right-arrow"><i class="fas fa-chevron-right"></i></span>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu__item">
+                                        <a href="#" class="main-menu__link"><span>Смесь для гипсокартона </span></a>
+                                    </li>
+                                    <li class="main-menu__item">
+                                        <a href="#" class="main-menu__link"><span>Смесь для штукатурки</span></a>
+                                    </li>
+                                    <li class="main-menu__item">
+                                        <a href="#" class="main-menu__link"><span>Смесь для стяжки</span></a>
+                                    </li>
+                                    <li class="main-menu__item">
+                                        <a href="#" class="main-menu__link"><span>Смесь для кирпича</span></a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link"><span>Гипсокартонные системы собственного производства <sup class="sup">65</sup></span></a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link">
+								<span class="main-menu__img">
+									<img src="img/main-menu-img2.png" alt="">
+								</span>
+                                    <span>Диваны <sup class="sup">12</sup></span>
+                                </a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link"><span>Кровати и матрасы</span></a>
+                            </li>
+                            <li class="main-menu__item ">
+                                <a href="#" class="main-menu__link main-menu__link--white"><span>Новинки <sup class="sup sup--danger">10</sup></span></a>
+                            </li>
+                            <li class="main-menu__item ">
+                                <a href="#" class="main-menu__link main-menu__link--white"><span>Лидеры продаж <sup class="sup sup--danger">70</sup></span></a>
+                            </li>
+                            <li class="main-menu__item ">
+                                <a href="#" class="main-menu__link main-menu__link--white"><span>Скидки и акции <sup class="sup sup--danger">2</sup></span></a>
+                            </li>
+                            <li class="main-menu__item ">
+                                <a href="#" class="main-menu__link main-menu__link--white"><span>Рекомендуем <sup class="sup sup--danger">6</sup></span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link"><span>О компании</span></a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link"><span>Условия доставки</span></a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link"><span>Гарантии</span></a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link next"><span>Бренды</span>
+                            <span class="main-menu__right-arrow">
+							<i class="fas fa-chevron-right"></i>
+						</span>
+                        </a>
+                        <ul class="main-menu">
+                            <li class="main-menu__header">
+                                <a href="#" class="back mobile-menu-back">
+                                    <i class="fas fa-chevron-left"></i> Назад
+                                </a>
+                                <div class="title">
+                                    <span>Бренды</span>
+                                    <span class="main-menu__right-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link"><span>Бренды</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link"><span>Полезные статьи</span></a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link"><span>Приглашаем к сотрудничеству</span></a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link"><span>Контакты</span></a>
+                    </li>
+                    <li class="card-menu">
+
+                        <div class="card-menu__item">
+                            <a href="#" class="card-menu__link">
+                                <span class="card-menu__icon text-danger"><i class="icon icon-shopping-basket"></i></span>
+                                <span>Корзина <sup class="sup sup--danger">2</sup></span>
+                                <span class="price nowrap">(25 789 руб.)</span>
+                            </a>
+                        </div>
+                        <div class="card-menu__item">
+                            <a href="#" class="card-menu__link">
+                                <span class="card-menu__icon"><i class="far fa-heart"></i></span>
+                                <span>В закладках</span>
+                            </a>
+                        </div>
+                        <div class="card-menu__item">
+                            <a href="#" class="card-menu__link">
+                                <span class="card-menu__icon"><i class="far fa-chart-bar"></i></span>
+                                <span>В сравнении <sup class="sup sup--danger">5</sup></span>
+                            </a>
+                        </div>
+                        <div class="card-menu__item">
+                            <a href="#" class="card-menu__link">
+                                <span class="card-menu__icon"><i class="icon icon-login"></i></span>
+                                <span>Личный кабинет</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="main-menu__footer">
+                        <p class="copyright">© 2015–2019 Moyshop.ru</p>
+                        <p>Интернет-магазин по продаже бытовой техники и ноутбуков по всей России.</p>
+                        <div class="foot-contacts">
+                            <div class="foot-contacts__item">
+                                <a href="tel:8298901890" class="foot-contacts__tel">8 (29) 890-18-90</a>
+                            </div>
+                            <div class="foot-contacts__item">
+                                <a href="tel:8297212840" class="foot-contacts__tel">8 (29) 721-28-40</a>
+                            </div>
+                        </div>
+                        <div class="timing">
+                            <div class="timing__item">Пн-Пт: с 9.00 до 18.00</div>
+                            <div class="timing__item">Сб: с 9.00 до 15.00</div>
+                            <div class="timing__item">Вс: выходной</div>
+                        </div>
+                        <a href="#" class="foot-contacts__link">Контактная информация</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <main class="main">
             <div class="container">
                 <nav class="breadcrumbs">
