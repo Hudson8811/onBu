@@ -20,6 +20,16 @@
         line-height: 22px;
         color: #8b929c;
         background-color: #f7f7f7;
+
+        a{
+            font-size: 13px;
+            line-height: 22px;
+            color: #8b929c;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
           
         @media screen and (min-width: 1024px){
             padding: 15px;
@@ -35,7 +45,9 @@
         margin-left: 30px;
     }
     &__item{
-        padding-top: 17px;
+        @media screen and (min-width:768px){
+            padding-top: 17px;
+        }
     }
 }
 .product-side{
@@ -69,6 +81,7 @@
             display: none;
             @media screen and (min-width: 1300px){
                 display: inline-block;
+                margin: 5px 0;
             }
             @media screen and (min-width: 1630px){
                 display: none;
@@ -238,13 +251,13 @@
         }
     }
     &__gallery-thumbs{
-        
+       margin: 17px -5px 0 !important;
     }
     &__gallery-thumbs-wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 42px;
+      
         transform: initial !important;
         @media screen and (min-width: 1024px){
             justify-content: start;
@@ -260,7 +273,7 @@
         justify-content: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 3px; 
+       
         @media screen and (min-width: 1024px){
             display: block;
         }       
@@ -268,9 +281,11 @@
     &__main-img{
         width: 100vw;
         height: auto;
+        
         @media screen and (min-width: 768px){
             width: 640px !important;
             height: 480px;
+            border-radius: 3px; 
         }
         @media screen and (min-width: 1024px){
             width: auto !important;
@@ -283,8 +298,7 @@
     &__side-img-block{
         width: 67px !important;
         height: 51px;
-        margin-right: 6px !important;
-        margin-bottom: 6px;
+        margin: 0 5px 6px !important;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 3px;
@@ -306,6 +320,10 @@
     }
     &__text-container{
         padding: 8px 15px 0;
+
+        .work-time__time{
+            border: none;
+        }
         @media screen and (min-width: 1024px){
             padding-top: 0;
         }

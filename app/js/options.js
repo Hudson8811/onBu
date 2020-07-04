@@ -1,4 +1,9 @@
-
+let elem3 = document.getElementById('more-settings');
+let elem4 = document.getElementById('more-options');
+  elem3.onclick = function(event){
+    elem4.classList.toggle('js-active');
+     elem3.classList.toggle("js-active")
+  }
 document.addEventListener('DOMContentLoaded', function() {
     var genericExamples = document.querySelectorAll('[data-trigger]');
     for (i = 0; i < genericExamples.length; ++i) {

@@ -3,21 +3,14 @@
     font-display:swap;
     font-family: 'icomoon';
     src:  
-      url('../fonts/icomoon.woff?') format('woff');
+      url('../fonts/icomoon.woff') format('woff'),
+      url('../fonts/icomoon.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: block;
   }
  
-@font-face {
-    font-display:swap;
-    font-family: 'icomoon-additional';
-    src: 
-      url('../fonts/icomoon-add.woff?') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+
 @font-face {
     font-display:swap;
     font-family: 'Roboto';
@@ -38,7 +31,9 @@
 @font-face {
     font-display:swap;
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Medium.ttf');
+    src:
+    url('../fonts/Roboto-Medium.woff') format('woff'),
+    url('../fonts/Roboto-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
@@ -46,6 +41,7 @@
     font-display: swap;
     font-family: 'Cera Pro';
     src: 
+    url('../fonts/CeraPro-BoldItalic.woff2') format('woff2'),
     url('../fonts/CeraPro-BoldItalic.woff') format('woff');
 
     font-weight: 700;
@@ -231,12 +227,7 @@ header{
             }
         }
         
-        &:hover{
-            span{
-                text-decoration: underline;
-            }
-            
-        }
+       
     }
     @media screen and (min-width:1630px){
         padding-right: 43px;
@@ -734,6 +725,10 @@ header{
         }
         li + li{
             padding-left: 37px;
+
+            @media screen and (min-width:1024px) and (max-width:1199px){
+                padding-left: 15px;
+            }
         }
         
 
@@ -988,12 +983,21 @@ header{
 .town{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+
+    &:hover{
+        border-color: #fff;
+    }
     .choices__inner{
         background-color: transparent;
         color: #fff;
-        padding: 0 8px;
+        padding: 0;
         border: 0;
         padding-bottom: 0 !important;
+    }
+    .choices__list--single{
+        padding: 3px 0 2px 4px;
     }
     .choices[data-type*='select-one']:after{
         display: none;
@@ -1261,7 +1265,7 @@ header{
         }
         @media screen and (min-width:1000px){
             &--column-2{
-                column-gap: 3em;
+                column-gap: 5em;
             }
             
         }
@@ -1270,7 +1274,7 @@ header{
                 margin-top: 2px;
             }
             &--column-2{
-                column-gap: 5em;
+                column-gap: 10em;
             }
         }
     }
@@ -1302,7 +1306,7 @@ header{
         @media screen and (min-width:1000px){            
             margin: 0;
             margin-left: auto;
-            text-align: right;
+         
         }
         &:hover{
             background-color: #819b25;
@@ -2001,6 +2005,12 @@ select{
         display: block;
         margin: 0;
 
+        .icon-arrow-down{
+            display: inline-block;
+            vertical-align: top;
+            transform: rotate(-90deg);
+        }
+
         &:last-child{
             border-bottom: none;
         }
@@ -2043,13 +2053,13 @@ select{
         font-family: "Open Sans", sans-serif;
         color: #252525;
         border-left: .3rem solid transparent;
-
+        
         .fa-bars {
             margin-right: 1rem;
             color: #f24646;
             font-size: 1.4rem;
         }
-
+        
         &--white {
             background: #fff;
         }
@@ -2140,6 +2150,12 @@ select{
                 font-size: 1rem;
                 margin-right: .2rem;
             }
+
+            .icon{
+                display: inline-block;
+                vertical-align: top;
+                transform: rotate(90deg);
+            }
         }
     }
 
@@ -2168,11 +2184,21 @@ select{
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 1.5rem 3.3rem 1.5rem 4.7rem;
+        padding: 1.5rem 3.3rem 1.5rem 1rem;
         font-size: 1.4rem;
         font-family: "Open Sans", sans-serif;
         color: #252525;
         border-left: .3rem solid transparent;
+
+        sup{
+            margin-top: -5px;
+            margin-left: 4px;
+            font-family: 'Roboto';
+            font-size: 12px;
+            line-height: 17px;
+            font-weight: 700;
+            color: #f24646;
+        }
 
         &:hover {
             background-color: #ffffff;
@@ -2293,20 +2319,47 @@ select{
 
 
 
-.icon-shopping-basket{
+// .icon-shopping-basket{
   
-    font-family: "icomoon-additional";
-    font-style: normal;
-    &:before{
-        content: "\f291";
-    }
+//     font-family: "icomoon-additional";
+//     font-style: normal;
+//     &:before{
+//         content: "\f291";
+//     }
+// }
+
+// .icon-login{
+    
+//     font-family: "icomoon-additional";
+//     font-style: normal;
+//     &:before{
+//         content: "\e919";
+//     }
+// }
+
+
+.icon-bell::before {
+    content: "\e905";
+}
+.icon-heart::before {
+    content: "\e90d";
+}
+.icon-list:before {
+    content: "\e913";
+}
+.icon-cog::before {
+    content: "\e90c";
+}
+.icon{
+    font-family: 'icomoon';
+    padding-left: 10px;
+    padding-right: 8px;
+    color: #d0d0d0;
 }
 
-.icon-login{
-    
-    font-family: "icomoon-additional";
-    font-style: normal;
+.icon-arrow-down{
+    font-style: normal !important;
     &:before{
-        content: "\e919";
+        content: "\e90b";
     }
 }

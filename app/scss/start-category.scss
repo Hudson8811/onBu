@@ -139,6 +139,10 @@
             .choices__inner{
                 border-left-width: 0;
             }
+            .choices__list--dropdown{
+                left: -1px;
+                width: calc(100% + 1px);
+            }
             .category__input {
                 border-left-width: 0;
             }
