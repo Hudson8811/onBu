@@ -24,15 +24,15 @@
         .category__block.border-top-none{
             border-top-width: 0 !important;
         }
-        & + & {
-            > .category__filter-container:first-child{
-                border-top: 1px solid #d3d3d3;
+        // & + & {
+        //     > .category__filter-container:first-child{
+        //         border-top: 1px solid #d3d3d3;
 
-                @media screen and (min-width:768){
-                    border-top: none;
-                }
-            }
-        }
+        //         @media screen and (min-width:768){
+        //             border-top: none;
+        //         }
+        //     }
+        // }
        
        
         padding-top: 20px;
@@ -157,6 +157,11 @@
         &:nth-child(1),&:nth-child(2){
             .choices__inner{
                 border-top-width: 1px;
+            }
+        }
+        &--no--border-top-i{
+            .choices__inner{
+                border-top-width: 0 !important;
             }
         }
       }

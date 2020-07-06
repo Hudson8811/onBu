@@ -695,12 +695,11 @@ header{
                    >a{
                         display: block;
                         padding: 16px 13px;
-                        border-bottom: 1px solid #d3d3d3;
                         font-family: 'Open Sans';
                         font-size: 14px;
                         line-height: 17px;
                         color: #252525;
-                        border-bottom: 1px solid #d3d3d3;
+                        border-bottom: 1px solid #ececec;;
                         transition: .3s;
                         &:hover{
                             color: #8b929c;
@@ -728,15 +727,16 @@ header{
                            padding-left: 0 !important;
                            >a{
                                display: block;
-                               padding: 12px 13px;
-                               border-bottom: 1px solid #d3d3d3;
+                               padding: 17px 13px;
+                               border-bottom: 1px solid #ececec;;
                                font-family: 'Open Sans';
                                font-size: 14px;
                                line-height: 17px;
                                color: #252525;
+                               transition: .3s;
                               
                                &:hover{
-                                    border-bottom-color: #252525;
+                                color: #8b929c;
                                }
                            }
                        }
@@ -1010,21 +1010,25 @@ header{
 .town{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid transparent;
-    transition: .3s;
+    
+   
 
-    &:hover{
+    &:hover  .choices__inner{
         border-color: #fff;
     }
     .choices__inner{
+        margin-left: 4px;
         background-color: transparent;
         color: #fff;
         padding: 0;
         border: 0;
         padding-bottom: 0 !important;
+        transition: .3s;
+        border-bottom: 1px solid transparent;
     }
     .choices__list--single{
-        padding: 3px 0 0 4px;
+        padding: 2px 0 0 0;
+        
     }
     .choices[data-type*='select-one']:after{
         display: none;
@@ -1100,12 +1104,13 @@ header{
     border-bottom:1px solid transparent;
     box-sizing: border-box;
     transition: .3s;
+    margin-left: 15px;
     &:hover{
         border-bottom-color: #fff;
        
     }
     &__plus{
-        padding-left: 15px;
+        // margin-left: 15px;
         font-family: 'Open Sans Bold';
         font-size: 30px;
         line-height: normal;
@@ -1219,6 +1224,16 @@ header{
             }
             &--seller{
                 margin-left: 200px !important;
+            }
+            
+        }
+
+        @media screen and (min-width:1700){
+            &--info{
+                margin-left: 250px !important;
+            }
+            &--seller{
+                margin-left: 225px !important;
             }
             
         }
@@ -1962,7 +1977,7 @@ select{
         &:before {
             content: "\e911";
             color: #e9e9e9;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+            // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         }
       }
     
