@@ -1228,15 +1228,15 @@ header{
             
         }
 
-        @media screen and (min-width:1700){
-            &--info{
-                margin-left: 250px !important;
-            }
-            &--seller{
-                margin-left: 225px !important;
-            }
+        // @media screen and (min-width:1700){
+        //     &--info{
+        //         margin-left: 250px !important;
+        //     }
+        //     &--seller{
+        //         margin-left: 225px !important;
+        //     }
             
-        }
+        // }
         
     }
     &__menu + &__menu{
@@ -1316,12 +1316,12 @@ header{
             }
             
         }
-        @media screen and (min-width:1630px){
-            li + li{
-                margin-top: 2px;
-            }
+        // @media screen and (min-width:1630px){
+        //     li + li{
+        //         margin-top: 10px;
+        //     }
            
-        }
+        // }
     }
     &__menu-text-links{
         @media screen and (min-width:531px){
