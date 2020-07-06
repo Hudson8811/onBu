@@ -11,6 +11,18 @@
   }
  
 
+  @font-face {
+    font-display:swap;
+    font-family: 'icomoon-add';
+    src:  
+      url('../fonts/icomoon-add.woff') format('woff'),
+      url('../fonts/icomoon-add.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+ 
+
 @font-face {
     font-display:swap;
     font-family: 'Roboto';
@@ -668,6 +680,15 @@ header{
                 z-index: -1;
                 top: 180%;
                 transition: .3s;
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: -80%;
+                    height: 80%;
+                    width: 100%;
+                }
                 >li{
                     position: relative;
                     padding-left: 0 !important;
@@ -713,7 +734,7 @@ header{
                                font-size: 14px;
                                line-height: 17px;
                                color: #252525;
-                               border-bottom: 1px solid transparent;
+                              
                                &:hover{
                                     border-bottom-color: #252525;
                                }
@@ -745,6 +766,7 @@ header{
                 font-size: 7px;
                 transform: rotate(270deg);
                 &:before{
+                    font-size: 14px;
                     content: "\e90b";
                 }
                     
@@ -899,6 +921,7 @@ header{
         font-size: 14px;
         line-height: 22px;
         color: #fff;
+        transition: .3s;
         .icon-search{
             font-family: 'icomoon';
             padding-right: 7px;
@@ -907,6 +930,10 @@ header{
             &::before{
                 content: '\e904';
             }
+        }
+
+        &:hover{
+            background-color: #819b25;
         }
     }
     .js-active{
@@ -997,7 +1024,7 @@ header{
         padding-bottom: 0 !important;
     }
     .choices__list--single{
-        padding: 3px 0 2px 4px;
+        padding: 3px 0 0 4px;
     }
     .choices[data-type*='select-one']:after{
         display: none;
@@ -1068,8 +1095,15 @@ header{
 .post-an-ad{
     font-family: 'Open Sans';
     font-size: 12px;
-    line-height: 22px;
+    line-height: 19px;
     color: #fff;
+    border-bottom:1px solid transparent;
+    box-sizing: border-box;
+    transition: .3s;
+    &:hover{
+        border-bottom-color: #fff;
+       
+    }
     &__plus{
         padding-left: 15px;
         font-family: 'Open Sans Bold';
@@ -1079,9 +1113,7 @@ header{
     }
     &__text{
         display: none;
-        &:hover{
-            text-decoration: underline;
-        }
+       
     }
     @media screen and (min-width:650px){
         margin-left: 15px;
@@ -1265,7 +1297,7 @@ header{
         }
         @media screen and (min-width:1000px){
             &--column-2{
-                column-gap: 5em;
+                column-gap: 10em;
             }
             
         }
@@ -1273,9 +1305,7 @@ header{
             li + li{
                 margin-top: 2px;
             }
-            &--column-2{
-                column-gap: 10em;
-            }
+           
         }
     }
     &__menu-text-links{
@@ -2361,5 +2391,14 @@ select{
     font-style: normal !important;
     &:before{
         content: "\e90b";
+    }
+}
+
+.product-item__tegs-item{
+    white-space: nowrap;
+    text-decoration: none !important;
+    border-bottom:1px solid transparent;
+    &:hover{
+        border-bottom-color: #8b929c;
     }
 }
