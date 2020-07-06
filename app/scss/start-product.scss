@@ -520,7 +520,7 @@
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 13px;
-        line-height: 22px;
+        line-height: 19px;
         color: #8b929c;
         &:hover{
             text-decoration: underline;
@@ -570,6 +570,7 @@
         line-height: 22px;
         color: #202124;
         .icon-arrow-down{
+            font-size: 10px;
             font-family: 'icomoon';
            
             &::before{
@@ -669,7 +670,7 @@
     .icon-message{
         padding-right: 8px;
         font-family: 'icomoon';
-        font-size: 16px;
+        font-size: 17px;
         color: #000;
         &::before{
             content: "\e90f";
