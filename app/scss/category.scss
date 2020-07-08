@@ -14,7 +14,7 @@
         margin: 0 auto;
     }
     @media screen and (min-width: 1200px){
-        border-radius: 10px;
+        border-radius: 5px;
         margin: 0;
         width: 78%;
     }
@@ -116,12 +116,19 @@
         font-size: 13px;
         line-height: 22px;
         color: #4d5156;
-        .icon-arrow-pagination{
-            padding-right: 5px;
-            font-family: 'icomoon';
+        border-bottom: 1px solid transparent;
+        transition: .3s;
+        &:hover{
+           border-color: #4d5156;
+        }
+        span{
             font-size: 14px;
-            &:before{
-                content: "\e900";
+            margin-right: 4px;
+        }
+        &--next{
+            span{
+                margin-right: 0;
+                margin-left: 4px;
             }
         }
         @media screen and (min-width: 768px){
@@ -136,5 +143,20 @@
                 order: 3;
             } 
         }
+    }
+}
+
+.icon-no-mater{
+    width: 10px;
+    position: relative;
+    margin-right: 5px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        height: 2px;
+        width: 10px;
+        background-color: red;
     }
 }

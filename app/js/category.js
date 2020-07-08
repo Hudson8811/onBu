@@ -53,7 +53,22 @@ let elem3 = document.getElementById('category__more-settings');
     elem4.classList.toggle('active-block');
      elem3.classList.toggle("js-active")
   }
+  let lower_param_btn = document.getElementById('lower_param_btn');
+  let artikul = document.getElementById('artikul');
+  let hide_buttons = document.getElementById('hide_buttons');
+  let   more_param = document.getElementById('more_param');
 
+  lower_param_btn.onclick = function(event){
+    elem4.classList.toggle('active-block-2');
+    hide_buttons.classList.toggle('active-block');
+    artikul.classList.toggle('js-hidden');
+  }
+  more_param.onclick = function(event){
+    elem4.classList.toggle('active-block-2');
+    hide_buttons.classList.toggle('active-block');
+    artikul.classList.toggle('js-hidden');
+  }
+  
   // let elem5 = document.getElementById('menu-adaptive__item--submenu');
   // let elem6 = document.getElementById('menu-adaptive__item--submenu-item');
   // elem5.onclick = function(event){

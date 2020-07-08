@@ -285,19 +285,19 @@
                                 </div>
                             </div>
                             <div class="category__filter-container ">
-                                <div class="category__filter-item category__filter-item--no-border-top">
+                                <div class="category__filter-item category__filter-item--no-border-top category__filter-item--no-border-top--mobile">
                                     <select name="" id=""  placeholder="Название запчасти" data-trigger class="custom-select category__select category__select--border-bottom category__select--border-bottom-md-dn ">
                                         <option value="" class="category__option ">Название запчасти</option>
                                     </select>
-                                    <div class="category__buttons category__buttons--poa category__buttons--md-dn">
+                                    <div class="category__buttons category__buttons--poa category__buttons--md-dn" id="hide_buttons">
                                         <button class="category__button category__show">Показать — <span class="category__show--total">6720</span></button>
-                                        <button class="category__button category__more-settings"></button>
+                                        <button class="category__button category__more-settings" id="more_param"></button>
                                     </div>
-                                    <input type="text" class="category__input category__input--md-db category__input--border-bottom" placeholder="Артикул запчасти">
+                                    <input type="text" class="category__input category__input--md-db category__input--border-bottom" placeholder="Артикул запчасти" id="artikul">
                                 </div>
                             </div>
                             <div class="category__filter-container">
-                                <div class="category__filter-item category__filter-item--no-border-top">
+                                <div class="category__filter-item category__filter-item--no-border-top category__filter-item--no-border-top--mobile">
                                     <select name="" id="" data-trigger class="custom-select category__select"  placeholder="Продавец">
                                         <option value="" class="category__option">Продавец</option>
                                     </select>
@@ -338,12 +338,12 @@
                                 <div class="category__filter-item">
                                     <div class="category__buttons category__buttons--poa">
                                         <button class="category__button category__show">Показать — <span class="category__show--total">6720</span></button>
-                                        <button class="category__button category__more-settings"></button>
+                                        <button class="category__button category__more-settings" id="lower_param_btn">Меньше параметров</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="category__filter-container">
-                                <div class="category__filter-item category__filter-item--no-border-top">
+                                <div class="category__filter-item category__filter-item--no-border-top category__filter-item--no-border-top--mobile">
                                     <select name="" id="" data-trigger class="custom-select category__select "  placeholder="Город">
                                         <option value="" class="category__option">Город</option>
                                     </select>
@@ -367,12 +367,24 @@
                         
                     </div>
                     <div class="category__bottom-settings">
-                        <select name="" id="" class="custom-select category__bottom-settings-select">
-                            <option value="1" class="category__bottom-settings-option">Сначала новые</option>
-                        </select>
-                        <select name="" id="" class="custom-select category__bottom-settings-select">
-                            <option value="1" class="category__bottom-settings-option">Все запчасти</option>
-                        </select>
+                        <div class="category__bottom-settings-select">
+                            <div class="category__bottom-settings-select-head">
+                                Сначала новые <span class="icon icon-arrow-down"></span>
+                                <ul class="options-dropdown">
+                                    <li class="options-dropdown__item">Сначала дешевые</li>
+                                    <li class="options-dropdown__item">Сначала дорогие</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category__bottom-settings-select">
+                            <div class="category__bottom-settings-select-head">
+                                Все запчасти <span class="icon icon-arrow-down"></span>
+                                <ul class="options-dropdown">
+                                    <li class="options-dropdown__item">Все запчасти</li>
+                                    <li class="options-dropdown__item">Все запчасти</li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="category__bottom-settings-container">
                             <div class="category__bottom-container">
                                 <input type="checkbox" id="photo" class="category__bottom-input">
@@ -384,9 +396,13 @@
                             </div>
                             <div class="category__bottom-container category__bottom-container--total">
                                 <label for="total" class="category__bottom-label">Кол-во:</label>
-                                <select name="" id="total" class="custom-select category__bottom-settings-select category__bottom-settings-select--grey">
-                                    <option value="1" class="category__bottom-settings-option">20</option>
-                                </select>
+                                <div class="category__bottom-settings-select-head">
+                                    20 <span class="icon icon-arrow-down"></span>
+                                    <ul class="options-dropdown">
+                                        <li class="options-dropdown__item">40</li>
+                                        <li class="options-dropdown__item">60</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -403,7 +419,7 @@
                                     <div class="product-side__desc-container">
                                         
                                         <div class="product-side__desc">
-                                            <a class="product-side__desc-link" href="#">Двигатели </a>›<a class="product-side__desc-link" href="#"> Audi </a>›<a class="product-side__desc-link" href="#"> A3 </a>›<a class="product-side__desc-link" href="#"> 2003-2007 </a>›<a class="product-side__desc-link" href="#"> 1.6 л, дизель, МКПП, хэтчбек</a>
+                                            <a class="product-side__desc-link" href="#">Двигатели </a>›<a class="product-side__desc-link" href="#">Audi</a>›<a class="product-side__desc-link" href="#">A3</a>›<a class="product-side__desc-link" href="#">2003-2007</a>›<a class="product-side__desc-link" href="#">1.6 л, дизель, МКПП, хэтчбек</a>
                                  
                                         </div>
                                         <a href="#" class="product-side__title product-side__title--desktop">
@@ -413,8 +429,16 @@
                                             <div class="product-side__state product-side__state--desktop">Состояние: б/у из Европы, мкпп 5 ст., небольшой люфт турбины, трещина горячей части турбины , цена указана без навесного, Модель двигателя...</div>
                                             <div class="product-item__price">
                                                 <div class="product-item__price-left product-side__price">
-                                                    <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble">₽</span></div>                                    
-                                                    <div class="product-item__ailability product-side__ailability"><span class="icon-check"></span>в наличии</div>
+                                                    <div class="product-side__price-container">659<span class="product-item__price--ruble product-side__price--ruble">₽</span>
+                                                        <ul class="options-dropdown">
+                                                            <li class="options-dropdown__item"><div class="product-item__price-right">
+                                                                35 <span class="product-item__other-price">$ </span><span class="product-item__other-price--other-ff"> или</span> 82<span class="product-item__other-price"> BYN</span>
+                                                            </div></li>
+                                                            
+                                                        </ul>
+                                                    </div>                                    
+                                                    <div class="product-item__ailability product-side__ailability "><span class="icon-no-mater"></span>Нет в наличии</div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -448,7 +472,7 @@
                                     </div>
                                     <div class="product-side__desc-container">
                                         <div class="product-side__desc">
-                                            <a class="product-side__desc-link" href="#">Фары </a>›<a class="product-side__desc-link" href="#"> Audi </a>›<a class="product-side__desc-link" href="#"> A3 </a>›<a class="product-side__desc-link" href="#"> 2003-2007 </a>
+                                            <a class="product-side__desc-link" href="#">Фары</a>›<a class="product-side__desc-link" href="#">Audi</a>›<a class="product-side__desc-link" href="#">A3</a>›<a class="product-side__desc-link" href="#">2003-2007</a>
                                             
                                         </div>
                                         <a href="#" class="product-side__title product-side__title--desktop">
@@ -489,8 +513,8 @@
                                 <a href="#" class="pagination__link">...</a>
                                 <a href="#" class="pagination__link">223</a>
                             </div>
-                            <a href="#" class="pagination__arrow-item"><span class="icon-arrow-pagination"></span>Пред.</a>
-                            <a href="#" class="pagination__arrow-item pagination__arrow-item--next">След.<span class="icon-arrow-pagination"></span></a>
+                            <a href="#" class="pagination__arrow-item"><span class="">&#8592</span>Пред. </a>
+                            <a href="#" class="pagination__arrow-item pagination__arrow-item--next">След.<span class="">&#8594</span></a>
                         </div>
                     </div>
                     
