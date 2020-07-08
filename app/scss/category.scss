@@ -16,7 +16,7 @@
     @media screen and (min-width: 1200px){
         border-radius: 5px;
         margin: 0;
-        width: 78%;
+        width: calc(100% - 280px);
     }
     // @media screen and (min-width: 1300px){
     //     display: flex;
@@ -147,7 +147,7 @@
 }
 
 .icon-no-mater{
-    width: 10px;
+    width: 8px;
     position: relative;
     margin-right: 5px;
     &::before{
@@ -156,7 +156,7 @@
         top: 50%;
         margin-top: -1px;
         height: 2px;
-        width: 10px;
+        width: 8px;
         background-color: red;
     }
 }
