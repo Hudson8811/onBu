@@ -2,6 +2,7 @@ let elem7 = document.getElementById('advertisement__more-setting');
 let elem8 = document.getElementById('advertisement__hidden-settings');
   elem7.onclick = function(event){  
     elem8.classList.toggle('active-block');
+    elem7.classList.toggle('js-active');
   }
 
  

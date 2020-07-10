@@ -2,6 +2,7 @@
 .advertisement{
     &__inner{
        position: relative;
+       
     }
     &__container{
         padding: 45px 15px 0;
@@ -22,18 +23,23 @@
         @media screen and (min-width: 1024px){
             display: flex;
         }
+       
+        &:not(.advertisement-item--full-width){
+            @media screen  and (min-width:1199px){
+                width: calc(100% - 500px);
+            }
+        }
+        
     }
     &__item + &__item{
-        margin-top: 25px;
+        margin-top: 20px;
     }
     &__item-container{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
-        &--max-width{
-            max-width: 200px;
-        }
+       
         @media screen and (min-width: 768px){
             flex-wrap: nowrap;
         }
@@ -44,14 +50,13 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        .choices{
-            width: 50%;
-        }
-        &--max-width{
-             max-width: 566px;
-        }
+       
+        
         &--md{
             display: block;
+        }
+        @media screen and (min-width:767px){
+            flex-wrap: nowrap;
         }
         &--w100-md{
             @media screen and (min-width: 1024px){
@@ -59,16 +64,7 @@
                 
             } 
         }
-        @media screen and (min-width: 768px){
-            flex-wrap: nowrap;
-            min-width: 218px;
-            width: auto;
-            .choices{
-                max-width: 218px;
-                width: 100%;
-                flex-shrink: 0;
-            }
-        }
+      
     }
     &__item-container + &__item-container{
         margin-top: 14px;
@@ -94,8 +90,8 @@
         display: block;
         width: 100%;
         padding: 9px 12px;
-        max-width: 218px;
-        min-height: 38px;
+       
+       
         border: 1px solid #d3d3d3;
         font-family: 'Roboto';
         font-size: 13px;
@@ -148,9 +144,7 @@
         }
     }
     &__input{
-        width: 100%;
         padding: 5px 12px;
-        max-width: 218px;
         height: 36px;
         border: 1px solid #d3d3d3;
         font-family: 'Roboto';
@@ -192,7 +186,11 @@
         }
         &--sale{
             max-width: 80px;
+
             margin-right: 8px;
+            @media screen and (min-width:1199px){
+                margin: 0 14px 9px !important;
+            }
         }
         &::placeholder{
             color: #8b929c;
@@ -213,8 +211,10 @@
         &:hover{
             border-bottom-color: transparent;
         }
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 767px){
             white-space: nowrap;
+            margin-bottom: 9px;
+
         }
     }
     &__price-right{
@@ -226,8 +226,10 @@
         line-height: 19px;
         color: #4d5156;
         @media screen and (min-width: 768px){
-            margin-left: 14px;
+          
             margin-top: 0;
+            margin-bottom: 9px;
+            white-space: nowrap;
         }
         // @media screen and (min-width: 1024px){
         //     display: none;
@@ -272,7 +274,7 @@
         line-height: 18px;
         color: #4d5156;
         box-sizing: border-box;
-        resize: none;
+        resize: vertical;
         &::placeholder{
             color: #8b929c;
         }
@@ -374,18 +376,25 @@
             z-index: 2;
             border-top: 1px dashed #cfd3d6;
         }
+        &.js-active{
+            &:before{
+                content: 'меньше параметров';
+            }
+        }
+        &:before{
+            content: 'больше параметров';
+            position: relative;
+            padding: 0 12px;
+            font-family: 'Arial';
+            font-size: 13px;
+            line-height: 17px;
+            color: #8b929c;
+            text-align: center;
+            background-color: #f7f7f7;
+            z-index: 3;
+        }
     }
-    &__more-setting-text{
-        position: relative;
-        padding: 0 12px;
-        font-family: 'Arial';
-        font-size: 13px;
-        line-height: 17px;
-        color: #8b929c;
-        text-align: center;
-        background-color: #f7f7f7;
-        z-index: 3;
-    }
+    
     &__how-seen{
         display: inline-block;
         padding-top: 29px;
@@ -470,7 +479,7 @@
             margin-top: -3.5px;
             color: #4d5156;
             left: 3px;
-            top: 20%;
+            top: 30%;
             &::before{
                 content: "\e90a";
             }
