@@ -1,6 +1,12 @@
 .options{
     &__page-title{
         margin-bottom: 40px;
+        padding: 0;
+    }
+    &__dop{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -16px;
     }
     @media screen and (min-width: 700px){
         padding: 24px 0;
@@ -17,6 +23,8 @@
     &__container{
         width: 94%;
         margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 20px;
     }
     &__content{
         width: 100%;
@@ -158,12 +166,41 @@
         margin-right: -8px;
         
     }
+    .work-time_title {
+        display: block;
+        width: 100%;
+        padding: 8px 12px;
+        height: 39px;
+        border: 1px solid #d3d3d3;
+        font-family: 'Roboto';
+        font-size: 13px;
+        line-height: 22px;
+        color: #4d5156;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fff;
+        &:after{
+            content: '';
+                height: 0;
+                width: 0;
+                border-style: solid;
+                border-color: #8b929c transparent transparent transparent;
+                border-width: 4px;
+                position: absolute;
+                right: 7px;
+                top: 50%;
+                margin-top: -2px;
+                pointer-events: none;
+                right: 15px
+
+        }
+    }
     &__line-button{
         display: flex;
         align-items: center;
         margin: 0 8px 8px;
 
-        .fas{
+        .icon-plus{
             color: #8b929c;
             margin-right: 8px;
         }
@@ -182,6 +219,18 @@
     }
     &__w100{
         width: 100%;
+        display: flex;
+        padding-right: 8px;
+        margin-right: -8px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+    .choices{
+        height: 100%;
+       &__inner{
+        height: 39px;
+        margin-top: 1px;
+       }
     }
     &__input{
         display: block;
@@ -287,7 +336,9 @@
                z-index: 10;
            }
        }
+       
    }
+   
 }
 .options-aside{
     width: 100%;
@@ -558,9 +609,11 @@
         transition: .3s;
         left: -50%;
         &--select{
+            margin-top: 10px;
             left: 0;
         }
     }
+    
 }
 
 
@@ -694,4 +747,23 @@
     &.js-active{
         display: block;
     }
+}
+
+.icon-arrow-down{
+    font-family: "Icomoon";
+}
+
+
+.icon-plus{
+    font-family: "Icomoon";
+    font-style: normal !important;
+    &:before {
+        content: "\e915";
+        }
+}
+.work-time__time-container{
+    font-size: 12px;
+    line-height: 15px;
+    font-family: "Roboto";
+    color: #8b929c;
 }

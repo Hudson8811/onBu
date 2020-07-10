@@ -4,7 +4,9 @@ let elem8 = document.getElementById('advertisement__hidden-settings');
     elem8.classList.toggle('active-block');
     elem7.classList.toggle('js-active');
   }
-
+  $(".advertisement__add-number").click(function(){
+    $(this).parent().append('<input type="text" class="advertisement__input advertisement__input--ml advertisement__input--number " placeholder="Номер телефона">');
+  });
  
 
 
@@ -65,3 +67,9 @@ let elem8 = document.getElementById('advertisement__hidden-settings');
       mobileMyMenu.style.left = -100 * activeMenus.length +'%';
       document.getElementsByClassName('mobile-navbar')[0].scrollTop = 0;
     }
+
+
+ 
+
+
+   

@@ -62,3 +62,18 @@ function setMyMenu() {
   mobileMyMenu.style.left = -100 * activeMenus.length +'%';
   document.getElementsByClassName('mobile-navbar')[0].scrollTop = 0;
 }
+
+
+
+
+// var $elem = $('#elem').data( "arr":[1] ), // оригинал элемента с закрепленным за ним массивом
+//     $clone = $elem.clone(true) // создадим копию элемента
+//     .data("arr", $.extend( [], $elem.data("arr") )); // и самостоятельно перепишем в нем arr
+
+
+
+    $(".options__line-button").click(function(){
+      $(this).next().append('<div class="options__item-container options__item-container--w25"><input type="text" name="phone" placeholder="Ваш номер" class="options__input"></div>');
+    });
+   
+  
