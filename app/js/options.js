@@ -72,8 +72,21 @@ function setMyMenu() {
 
 
 
-    $(".options__line-button").click(function(){
-      $(this).next().append('<div class="options__item-container options__item-container--w25"><input type="text" name="phone" placeholder="Ваш номер" class="options__input"></div>');
-    });
+    // $(".options__line-button").click(function(){
+    //   $(this).next().append('<div class="options__item-container options__item-container--w25"><input type="text" name="phone" placeholder="Ваш номер" class="options__input"></div>');
+    // });
    
   
+    $(".options__line-button--new-reg").click(function(){
+      $(this).toggleClass("js-active")
+      $(this).next().toggleClass('js-active')
+      $(this).next().next().toggleClass('js-active')
+    });
+    $(".options__line-button--new-red-hidden").click(function(){
+      $(this).toggleClass("js-active")
+      $(this).next().toggleClass('js-active')
+      $(this).next().next().toggleClass('js-active')
+    });
+    $(".options__line-button--phone").click(function(){
+      $(this).next().append('<div class="options__item-container options__item-container--w25"><input type="text" name="phone" placeholder="Ваш номер" class="options__input"></div>');
+    });

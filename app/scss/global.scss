@@ -1677,7 +1677,7 @@ header{
         align-items: center;
         justify-content: center;
         @media screen and (min-width: 1024px){
-            padding: 0 15px;
+            padding: 0 8px;
             justify-content: start;
         }
         li{
@@ -1718,7 +1718,7 @@ header{
 }
 
 h1{
-    padding: 0 15px;
+    padding: 0 6px;
     font-family: 'Roboto';
     font-size: 22px;
     line-height: 27px;
@@ -1734,7 +1734,7 @@ h1{
         text-align: left;
         font-size: 39px;
         line-height: 42px;
-        padding: 0 15px;
+
     }
 }
 h2{

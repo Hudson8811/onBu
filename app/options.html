@@ -289,7 +289,7 @@
                                         в котором вы можете продать товар
                                     </div>
                                 </div>
-                                <div class="options__line-row">
+                                <div class="options__line-row options__line-row-main-region">
                                     <div class="options__item-container options__item-container--w33-3">
                                         <select id="select2" data-trigger   class="custom-select" placeholder="Выбрать основной регион">
                                             <option class="select-dropdown__list-item" value="">
@@ -309,7 +309,7 @@
                                             <option class="select-dropdown__list-item" value="МТС">МТС</option>
                                         </select>
                                     </div>
-                                    <button class="options__line-button">
+                                    <button class="options__line-button options__line-button--phone">
                                         <span class="options__line-button-text">
                                             добавить номер
                                         </span>
@@ -333,18 +333,19 @@
                                         Время работы
                                        </div>
                                         <div class="work-time options-aside__work-time-menu options-aside__work-time-menu--select">
+                                            <input type="text" class="work-time__input">
                                             <div class="work-time__item">
-                                                <input type="checkbox" id="check1" class="work-time__time-input">
+                                                <!-- <input type="checkbox" id="check1" class="work-time__time-input"> -->
                                                 <label for="check1" class="work-time__time-label"><span class="icon-check"></span>Понедельник</label>
                                                 <div class="work-time__time-container">
-                                                    <span class="work-time__time">9.00</span> - <span class="work-time__time">18.00</span>
+                                                    <input class="work-time__time" placeholder="9.00"> - <input class="work-time__time" placeholder="18.00">
                                                 </div>
                                             </div>
                                             <div class="work-time__item">
                                                 <input type="checkbox" id="check2" class="work-time__time-input">
                                                 <label for="check2" class="work-time__time-label"><span class="icon-check"></span>Вторник</label>
                                                 <div class="work-time__time-container">
-                                                    <span class="work-time__time">9.00</span> - <span class="work-time__time">20.00</span>
+                                                    <input class="work-time__time" placeholder="9.00"> - <input class="work-time__time" placeholder="20.00">
                                                 </div>
                                             </div>
                                             <div class="work-time__item work-time__item--day-off">
@@ -356,13 +357,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="options__line-button">
+                                    <button class="options__line-button options__line-button--new-reg" >
                                         <i class=" icon-plus"></i>
                                         <span class="options__line-button-text">
                                             добавить еще регион
                                         </span>
                                     </button>
-                                   <div class="options__dop">
+                                   <div class="options__dop js-active">
                                     <div class="options__item-container options__item-container--w33-3">
                                         <select id="select5" data-trigger  class="custom-select">
                                             <option class="select-dropdown__list-item" value="Выбрать основной регион">
@@ -376,7 +377,7 @@
                                     <div class="options__item-container options__item-container--w25">
                                         <input type="text" name="phone" class="options__input">
                                     </div>
-                                    <button class="options__line-button">
+                                    <button class="options__line-button options__line-button--phone">
 
                                         <span class="options__line-button-text">
                                             добавить номер
@@ -401,14 +402,106 @@
                                         <input type="text" name="adress" class="options__input">
                                     </div>
                                     <textarea  class="options__textarea options__textarea--medium" placeholder="Опишите условия доставки в этот регион"></textarea>
-                                    
+                                    <div class="options__w100"></div>
+                                   
                                    </div>
-                                   <button class="options__line-button">
+                                   <button class="options__line-button options__line-button--new-reg options__line-button--new-reg-hidden">
                                     <i class=" icon-plus"></i>
                                     <span class="options__line-button-text">
                                         добавить еще регион
                                     </span>
                                     </button>
+                                    <div class="options__dop js-active">
+                                        <div class="options__item-container options__item-container--w33-3">
+                                            <select id="select5" data-trigger  class="custom-select">
+                                                <option class="select-dropdown__list-item" value="Выбрать основной регион">
+                                                    Выбрать доп. регион
+                                                </option>
+                                                <option class="select-dropdown__list-item" value="Выбрать основной регион">
+                                                    Выбрать доп. регион
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="options__item-container options__item-container--w25">
+                                            <input type="text" name="phone" class="options__input">
+                                        </div>
+                                        <button class="options__line-button options__line-button--phone">
+    
+                                            <span class="options__line-button-text">
+                                                добавить номер
+                                            </span>
+                                        </button>
+                                        <div class="options__w100"></div>
+                                        <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Вайбер" class="options__input"></div>
+                                        <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Cкайп" class="options__input"></div>
+                                        <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Вайбер" class="options__input"></div>
+                                        <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Cкайп" class="options__input"></div>
+                                        <div class="options__item-container options__item-container--w33-3">
+                                            <select id="select6"  data-trigger  class="custom-select">
+                                                <option class="select-dropdown__list-item" value="Выбрать основной регион">
+                                                    Выбрать доп. регион
+                                                </option>
+                                                <option class="select-dropdown__list-item" value="Выбрать основной регион">
+                                                    Выбрать доп. регион
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="options__item-container options__item-container--w33-3">
+                                            <input type="text" name="adress" class="options__input">
+                                        </div>
+                                        <textarea  class="options__textarea options__textarea--medium" placeholder="Опишите условия доставки в этот регион"></textarea>
+                                        <div class="options__w100"></div>
+                                       
+                                    </div>
+                                    <button class="options__line-button options__line-button--new-reg options__line-button--new-reg-hidden">
+                                        <i class=" icon-plus"></i>
+                                        <span class="options__line-button-text">
+                                            добавить еще регион
+                                        </span>
+                                        </button>
+                                        <div class="options__dop js-active">
+                                            <div class="options__item-container options__item-container--w33-3">
+                                                <select id="select5" data-trigger  class="custom-select">
+                                                    <option class="select-dropdown__list-item" value="Выбрать основной регион">
+                                                        Выбрать доп. регион
+                                                    </option>
+                                                    <option class="select-dropdown__list-item" value="Выбрать основной регион">
+                                                        Выбрать доп. регион
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="options__item-container options__item-container--w25">
+                                                <input type="text" name="phone" class="options__input">
+                                            </div>
+                                            <button class="options__line-button options__line-button--phone">
+        
+                                                <span class="options__line-button-text">
+                                                    добавить номер
+                                                </span>
+                                            </button>
+                                            <div class="options__w100"></div>
+                                            <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Вайбер" class="options__input"></div>
+                                            <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Cкайп" class="options__input"></div>
+                                            <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Вайбер" class="options__input"></div>
+                                            <div class="options__item-container options__item-container--w20"><input type="text" placeholder="Cкайп" class="options__input"></div>
+                                            <div class="options__item-container options__item-container--w33-3">
+                                                <select id="select6"  data-trigger  class="custom-select">
+                                                    <option class="select-dropdown__list-item" value="Выбрать основной регион">
+                                                        Выбрать доп. регион
+                                                    </option>
+                                                    <option class="select-dropdown__list-item" value="Выбрать основной регион">
+                                                        Выбрать доп. регион
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="options__item-container options__item-container--w33-3">
+                                                <input type="text" name="adress" class="options__input">
+                                            </div>
+                                            <textarea  class="options__textarea options__textarea--medium" placeholder="Опишите условия доставки в этот регион"></textarea>
+                                            <div class="options__w100"></div>
+                                           
+                                        </div>
+                                  
                                 </div>
                                 
                         
@@ -420,7 +513,7 @@
                         </div>
                        <div class="more-options js-active" id="more-options">
                         <div class="options__line">
-                            <div class="options__line-left">
+                            <div class="options__line-left options__line-left--center">
                                 <div class="options__line-left-title">
                                    Основная валюта
                                 </div>
@@ -437,7 +530,7 @@
                         </div>
                         <div class="options__line">
                            
-                             <div class="options__line-left">
+                             <div class="options__line-left options__line-left--center">
                                 <div class="options__line-left-title">
                                     Уведомления
                                  </div>
@@ -447,7 +540,7 @@
                                     <input type="checkbox" id="checkbox1" class="add-price__item-input">
                                     <label for="checkbox1" class="add-price__item-link"><span class="icon-check"></span>присылать запросы от клиентов из быстрого заказа</label>
                                 </div>
-                                <div class="options__item-container options__item-container--w25">
+                                <div class="options__item-container options__item-container--w25 options__item-container--no-mb">
                                     <select id="select8" data-trigger  class="custom-select">
                                         <option>По всем товарам</option>
                                         <option>По всем товарам</option>
