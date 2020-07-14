@@ -1859,12 +1859,19 @@ h6{
     @media screen and (min-width: 768px){
         padding-left: 45px;
     }
+    &:hover{
+        .settings__text{
+            border-bottom-color: #fff;
+        }
+    }
     &__text{
         display: none;
         font-family: 'Roboto';
         font-size: 13px;
         line-height: 17px;  
         color: #fff;  
+        border-bottom: 1px solid transparent;
+        transition: .3s;
         @media screen and (min-width: 768px){
             display: inline;
         }
@@ -1892,11 +1899,22 @@ h6{
         font-family: 'icomoon';
         font-size: 18px;
         color: #fff;
+        
         &::before{
             content: "\e912";
         }
         @media screen and (min-width: 768px){
             display: block;
+        }
+    }
+    &__text{
+        border-bottom: 1px solid transparent;
+        transition: .3s;
+
+    }
+    &:hover{
+        .wallet__text{
+            border-bottom-color: #fff;
         }
     }
 }
